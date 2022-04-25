@@ -1,27 +1,6 @@
 import React from "react";
 
 function Card(props) {
-  // const { name, category } = props;
-  // const data = ["1", "2", "3"];
-  //   console.log(props);
-  //   props = {
-  //       name: "Spiderman",
-  //       category: "Action"
-  //   }
-  // const handleDetail = () => {
-  //   props.handleDetail(1, data);
-  // };
-
-  // ====
-
-  // props = {
-  //   data: {
-  //     name: ...,
-  //     category: ...,
-  //     ...
-  //   }
-  // }
-  //   console.log(props.data)
   const { id, name, category } = props;
   const image = "vxyfddgxlx5fr8ma2wxm.png";
 

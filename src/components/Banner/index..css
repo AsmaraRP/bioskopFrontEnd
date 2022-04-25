@@ -1,0 +1,12 @@
+.banner {
+  margin-top: 100px;
+  height: 609px;
+  background-color: #ffffff;
+}
+.banner__motto {
+  position: absolute;
+  top: 304px;
+}
+.banner_img {
+  height: 100%;
+}

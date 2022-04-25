@@ -53,7 +53,7 @@ function Login() {
   };
 
   return (
-    <div className="container login__content">
+    <div className="container">
       <div className="row">
         <div className="col-7">
           <div className="login__left">

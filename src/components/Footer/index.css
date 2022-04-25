@@ -1,0 +1,71 @@
+.footer__Main {
+  position: relative;
+  background-color: #ffffff;
+  z-index: 1;
+  height: 400px;
+  padding-top: 60px;
+}
+.footer__Logo {
+  position: relative;
+  height: 43px;
+  top: 93px;
+}
+.footer__textCol1 {
+  position: relative;
+  top: 130px;
+  width: 300px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #6e7191;
+}
+.footer__textCol2 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #000000;
+  position: relative;
+  top: 93px;
+}
+.footer__Page {
+  position: relative;
+  top: 120px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #4e4b66;
+  width: 100px;
+  text-align: start;
+  background-color: #ffffff;
+  border: none;
+}
+.footer__sponsor {
+  position: relative;
+  top: 110px;
+}
+.footer__contact {
+  position: relative;
+  top: 110px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6e7191;
+}
+.footer__copyRight {
+  position: relative;
+  top: 150px;
+  text-align: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #4e4b66;
+}

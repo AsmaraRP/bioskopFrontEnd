@@ -20,6 +20,19 @@
   font-size: 14px;
   color: #f7f7fc;
 }
+.nav__searchNav {
+  padding-top: 25px;
+}
+.nav__btnMenu {
+  padding-top: 20px;
+  margin-left: 50px;
+  background-color: #ffffff;
+  border: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+}
 .nav__buttonSignUp:hover {
   background-color: #ffffff;
   color: #5f2eea;
@@ -39,6 +52,7 @@
   padding-left: 10px;
   border-radius: 10px;
   border: 1px solid #ffffff;
+  margin-top: 22px;
 }
 .nav__profileNav:hover .nav__searchWord {
   display: inline-block;
@@ -51,6 +65,7 @@
   height: 45px;
   width: 45px;
   border-radius: 50%;
+  margin-top: 20px;
 }
 .nav__homeMenu {
   position: absolute;

@@ -1,0 +1,82 @@
+.membershipCard {
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+  height: 500px;
+}
+.cardMainMembership {
+  position: relative;
+  top: 30px;
+  width: 100%;
+  height: 300px;
+  background: #ffffff;
+  box-shadow: 0px 16px 32px rgba(186, 186, 186, 0.3);
+  border-radius: 8px;
+}
+.membership__moviegoers {
+  height: 87px;
+  width: 262px;
+  position: relative;
+  margin-top: 50px;
+}
+.membership__emailForm {
+  margin-right: 60px;
+  position: relative;
+  padding: 10px;
+  width: 300px;
+  height: 40px;
+  top: 20px;
+  left: 160px;
+  border: 2px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.75px;
+  color: #a0a3bd;
+}
+.membership__buttonResponse {
+  position: relative;
+  margin-left: -70px;
+  top: 20px;
+  left: 170px;
+  background: #5f2eea;
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #f7f7fc;
+}
+.membership__buttonResponse:hover {
+  border: 2px solid #5f2eea;
+  background-color: #ffffff;
+  color: #5f2eea;
+}
+.membership__textResponse {
+  position: relative;
+  top: 50px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #6e7191;
+}
+.membership__textResponse2 {
+  position: relative;
+  top: 40px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #6e7191;
+}
