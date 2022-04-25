@@ -20,29 +20,19 @@ function Login() {
   const [isError, setIsError] = useState(false);
 
   const handleChangeForm = (event) => {
-    // console.log("User sedang mengetik");
-    // console.log(event.target.name);
-    // console.log(event.target.value);
     setForm({ ...form, [event.target.name]: event.target.value });
   };
 
   const handleSubmit = async (event) => {
     try {
       event.preventDefault();
-      // console.log("Submit Login");
-      // Input = email password di siapkan
-      // console.log(form);
-      // Proses = memanggil axios
       const resultLogin = await axios.post("auth/login", form);
-      // proses get data user by id
-      //   const resultUser = await axios.get(`user/${resultLogin.data.data.id}`)
       const resultUser = [
         {
           id: 1,
           name: "Bagus"
         }
       ];
-      // Output = suatu keadaan yang dapat diinfokan ke user bahwa proses sudah selesai
       setIsError(false);
       setMessage(resultLogin.data.msg);
       localStorage.setItem("token", resultLogin.data.data.token);
@@ -71,11 +61,6 @@ function Login() {
   return (
     <div className="text-center container">
       <h1>Login Page</h1>
-      {/* {isError && (
-        <div className="alert alert-danger" role="alert">
-          {message}
-        </div>
-      )} */}
       {!message ? null : isError ? (
         <div className="alert alert-danger" role="alert">
           {message}
@@ -87,7 +72,13 @@ function Login() {
       )}
 
       <form onSubmit={handleSubmit} onReset={handleReset}>
-        <input type="email" value={form.email} placeholder="Input email" name="email" onChange={handleChangeForm} />
+        <input
+          type="email"
+          value={form.email}
+          placeholder="Input email"
+          name="email"
+          onChange={handleChangeForm}
+        />
         <br />
         <input
           type="password"

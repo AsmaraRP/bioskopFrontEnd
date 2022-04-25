@@ -1,0 +1,84 @@
+/* NAVBAR */
+.nav__navcss {
+  background-color: #ffffff;
+  height: 104px;
+  /* box-shadow: 0px 8px 24px rgba(186, 186, 186, 0.16); */
+}
+.nav__logo {
+  height: 100%;
+  top: 9.57px;
+  left: 0.35px;
+}
+.nav__buttonSignUp {
+  background: #5f2eea;
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #f7f7fc;
+}
+.nav__buttonSignUp:hover {
+  background-color: #ffffff;
+  color: #5f2eea;
+  border: 2px solid #5f2eea;
+}
+.nav__displayHide {
+  display: none;
+}
+/* Nav Profile*/
+.nav__searchWord {
+  display: none;
+  width: 150px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+}
+.nav__profileNav:hover .nav__searchWord {
+  display: inline-block;
+}
+.nav__profileMenu {
+  background-color: #ffffff;
+  margin-top: -15px;
+}
+.nav__profileImg {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+.nav__homeMenu {
+  position: absolute;
+  left: 27%;
+  top: 42px;
+  text-decoration: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  color: #414141;
+}
+.nav__listMenu {
+  position: absolute;
+  left: 34%;
+  top: 42px;
+  text-decoration: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  color: #414141;
+}
+.nav__navIconBar {
+  display: none;
+  width: 10px;
+}

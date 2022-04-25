@@ -8,7 +8,7 @@ function BasicReact() {
   const data = [
     { id: 1, name: "Spiderman" },
     { id: 2, name: "Batman" },
-    { id: 3, name: "Lego" },
+    { id: 3, name: "Lego" }
   ];
   const [email, setEmail] = useState("");
   // const [keyword, setKeyword] = useState("");
@@ -76,11 +76,7 @@ function BasicReact() {
 
       <h5>Input</h5>
       {/* onChange */}
-      <input
-        type="email"
-        placeholder="Input your email ..."
-        onChange={handleChangeEmail}
-      />
+      <input type="email" placeholder="Input your email ..." onChange={handleChangeEmail} />
       <h6>Your email is {email}</h6>
       {/* onKeyPress */}
       <input type="text" placeholder="Search ..." onKeyPress={handleSearch} />
@@ -103,9 +99,7 @@ function BasicReact() {
 
       <h3>Style In React</h3>
       <h1 className="heading">Hello World</h1>
-      <h1 className={`${styles.heading} ${styles.textUnderline} text-center`}>
-        Hello World
-      </h1>
+      <h1 className={`${styles.heading} ${styles.textUnderline} text-center`}>Hello World</h1>
       <h1 className={(styles.heading, styles.textUnderline)}>Hello World</h1>
       <h1 className={styles.heading2}>Hello World</h1>
       <hr />
