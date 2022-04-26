@@ -1,0 +1,80 @@
+.personalPay__infoPersonal {
+  position: relative;
+  padding: 30px;
+  top: 80px;
+  height: 433px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 30px;
+}
+.personalPay__labelPersonal {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #696f79;
+}
+.personalPay__formPersonal {
+  width: 100%;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  padding: 10px 30px 10px 30px;
+  border-radius: 4px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #4e4b66;
+}
+.personalPay__numberInput {
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.personalPay__codeNumber {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #4e4b66;
+  padding-right: 5s0px;
+  width: 60%;
+  border: none;
+}
+.personalPay__linePhone {
+  margin-left: -30px;
+  padding-top: 5px;
+}
+.personalPay__formNumber {
+  margin-top: 10px;
+  margin-left: -50px;
+  margin-bottom: 10px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  border: none;
+  color: #4e4b66;
+}
+.personalPay__warningInput {
+  padding-top: 15px;
+  padding-left: 40px;
+  height: 64px;
+  width: 100%;
+  background: rgba(244, 183, 64, 0.3);
+  border-radius: 4px;
+}
+.personalPay__warningMsg {
+  position: relative;
+  top: -25px;
+  left: 80px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #4e4b66;
+}

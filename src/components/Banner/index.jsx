@@ -1,4 +1,4 @@
-import "./index..css";
+import "./index.css";
 import mottoBanner from "../../assets/motto.png";
 import bannerMain from "../../assets/banner_img.png";
 

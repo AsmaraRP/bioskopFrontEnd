@@ -19,14 +19,19 @@ function Card(props) {
   //     name: ...,
   //     category: ...,
   //     ...
-  //   }
+  //   },
+  //   dataUser: {
+  //     ...
+  //   },
+  //   month: 1
   // }
-  //   console.log(props.data)
-  const { id, name, category } = props;
+  // console.log(props.data)
+  const { id, name, category } = props.data;
+  // const { dataUser, month } = props;
   const image = "vxyfddgxlx5fr8ma2wxm.png";
 
   return (
-    <div className="card" style={{ width: "18rem" }}>
+    <div className="card">
       <img
         src={
           image
@@ -49,7 +54,12 @@ function Card(props) {
 }
 
 Card.defaultProps = {
-  category: "Default Category"
+  category: "Default Category",
+  data: {
+    id: "",
+    name: "",
+    category: ""
+  }
 };
 
 export default Card;

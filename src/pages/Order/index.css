@@ -1,0 +1,211 @@
+.order__main {
+  margin-top: 90px;
+  height: 1200px;
+  background-color: #f5f6f8;
+}
+.order__movieSelect {
+  position: relative;
+  top: 70px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.25px;
+  color: #14142b;
+}
+.order__movieOption {
+  position: relative;
+  top: 80px;
+  height: 104px;
+  width: 100%;
+  border-radius: 6px;
+  background-color: #ffffff;
+  padding: 37px;
+}
+.order__movieName {
+  position: relative;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.25px;
+  color: #000000;
+}
+.order__btnMovie {
+  position: relative;
+  top: -45px;
+  left: 80%;
+  background: #eff0f7;
+  opacity: 0.8;
+  border: 2px solid #eff0f7;
+  border-radius: 15px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #5f2eea;
+  height: 45px;
+  width: 139px;
+}
+.order__btnMovie:hover {
+  border: 2px solid #5f2eea;
+}
+.order__chooseSeat {
+  position: relative;
+  top: 120px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.25px;
+  color: #14142b;
+}
+.order__seatOption {
+  position: relative;
+  padding: 150px;
+  top: 130px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  width: 100%;
+  height: 700px;
+}
+.order__screen {
+  margin-left: 30px;
+  background-color: #d6d8e7;
+  text-align: center;
+}
+.order__infoSeatBook {
+  margin-top: 50px;
+}
+.order__available {
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  background-color: #d6d8e7;
+}
+.order__selected {
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  background-color: #5f2eea;
+}
+.order__sold {
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  background-color: #6e7191;
+}
+.order__infoSeat {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+.order__btnChange {
+  position: relative;
+  top: 180px;
+  left: 0;
+  width: 300px;
+  height: 58px;
+  background: #eff0f7;
+  opacity: 0.8;
+  border: 2px solid #5f2eea;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #5f2eea;
+}
+.order__btnChange:hover {
+  color: #5f2eea;
+  font-size: 16px;
+}
+.order__btnCheckout {
+  position: relative;
+  top: 180px;
+  left: 250px;
+  width: 300px;
+  height: 58px;
+  background: #5f2eea;
+  opacity: 0.8;
+  border: 2px solid #5f2eea;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #eff0f7;
+}
+.order__btnCheckout:hover {
+  color: #eff0f7;
+  font-size: 16px;
+}
+.order__personalInfo {
+  position: relative;
+  top: 70px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #14142b;
+}
+.order__infoBook {
+  position: relative;
+  top: 80px;
+  height: 433px;
+  width: 412px;
+  background: #ffffff;
+  box-shadow: 0px 8px 16px rgba(186, 186, 186, 0.24);
+  border-radius: 6px;
+  padding: 20px;
+}
+.order__orderImg {
+  height: 22px;
+  width: 132px;
+  position: relative;
+  left: 110px;
+}
+.order__nameImg {
+  position: relative;
+  margin-top: 20px;
+  left: 60px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #14142b;
+}
+.order__titleOrderLeft {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6b6b6b;
+}
+.order__titleOrderRight {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #14142b;
+}
+.order__lineOrder {
+  width: 100%;
+}
+.order__totalPayment {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+}
+.order__totalPrice {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #5f2eea;
+}

@@ -21,12 +21,7 @@ function Login() {
     try {
       event.preventDefault();
       const resultLogin = await axios.post("auth/login", form);
-      const resultUser = [
-        {
-          id: 1,
-          name: "Bagus"
-        }
-      ];
+      // console.log(resultLogin);
       setIsError(false);
       setMessage(resultLogin.data.msg);
       localStorage.setItem("token", resultLogin.data.data.token);

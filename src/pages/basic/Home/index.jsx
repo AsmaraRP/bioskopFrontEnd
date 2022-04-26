@@ -38,11 +38,6 @@ function BasicHome() {
   };
 
   const handleDetailMovie = (id) => {
-    // [1] = search params untuk pagination
-    // navigate(`/basic/detail?id=${id}`);
-    // [2] = state
-    // navigate("/basic/detail", { state: { id: id } });
-    // [3]
     navigate(`/basic/detail/${id}`);
     console.log(id);
   };

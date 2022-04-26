@@ -1,4 +1,98 @@
-.isi {
-  height: 500px;
-  background-color: bisque;
+.home__contentNowShowing {
+  background-color: #f5f6f8;
+  height: 576px;
+  position: relative;
+}
+.home__contentUpcoming {
+  height: 800px;
+  background-color: #ffffff;
+}
+.home__titleNowShowing {
+  width: 161px;
+  position: relative;
+  top: 60px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #5f2eea;
+  font-weight: bold;
+}
+.home__viewAll {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  width: 100px;
+  height: 20px;
+  top: 25px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #5f2eea;
+}
+.home__movieListNow {
+  margin-top: 50px;
+  overflow: auto;
+  white-space: nowrap;
+}
+.home__titleUpcoming {
+  width: 250px;
+  position: relative;
+  top: 60px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: black;
+  font-weight: bold;
+}
+.home__listMonthMovie {
+  margin-top: 50px;
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+}
+.home__monthBtn {
+  top: 40px;
+  left: 15px;
+  border: 1px solid #5f2eea;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #5f2eea;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  height: 33px;
+  width: 189px;
+  margin-bottom: 20px;
+}
+.home__monthBtn:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+.home__monthBtnActive {
+  top: 40px;
+  left: 15px;
+  background-color: #5f2eea;
+  border: 1px solid #5f2eea;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  height: 33px;
+  width: 189px;
+  margin-bottom: 20px;
+}
+.home__monthBtnActive:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
 }

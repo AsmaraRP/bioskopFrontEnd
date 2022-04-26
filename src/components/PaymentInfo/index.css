@@ -1,0 +1,29 @@
+.payInfo__paymentInfo {
+  position: relative;
+  top: 80px;
+  height: 400px;
+  width: 100%;
+  border-radius: 6px;
+  background-color: #ffffff;
+  padding: 60px;
+}
+.payInfo__titlePayementLeft {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #6b6b6b;
+}
+.payInfo__titlePaymentRight {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #14142b;
+}
+.payInfo__totalOrder {
+  font-weight: 700;
+}
+.payInfo__linePayment {
+  width: 100%;
+}

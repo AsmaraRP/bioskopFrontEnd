@@ -4,6 +4,8 @@ import BasicReact from "./pages/basic/React";
 import SignIn from "./pages/Login";
 import BasicLogin from "./pages/basic/Login";
 import BasicHome from "./pages/basic/Home";
+import BasicDetail from "./pages/basic/Detail";
+import BasicOrder from "./pages/basic/Order";
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
 import Order from "./pages/Order";
@@ -17,9 +19,12 @@ function App() {
         <Route path="basic/react" element={<BasicReact />} />
         <Route path="basic/login" element={<BasicLogin />} />
         <Route path="basic/home" element={<BasicHome />} />
+        <Route path="basic/order" element={<BasicOrder />} />
+        {/* <Route path="basic/detail" element={<BasicDetail />} /> */}
+        <Route path="basic/detail/:id" element={<BasicDetail />} />
         <Route path="login" element={<SignIn />} />
         <Route path="home" element={<Home />} />
-        <Route path="detail" element={<Detail />} />
+        <Route path="detail/:id" element={<Detail />} />
         <Route path="order" element={<Order />} />
         <Route path="payment" element={<Payment />} />
       </Routes>

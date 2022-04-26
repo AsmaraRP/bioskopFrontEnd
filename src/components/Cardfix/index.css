@@ -1,14 +1,14 @@
-.now__card {
+.fix__card {
   vertical-align: top;
+  height: 408px;
   width: 223px;
-  height: 308px;
   margin-right: 40px;
   display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
-  border: 2px solid #ffffff;
-  margin-bottom: 30px;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 8px;
 }
-.now__movieShow {
+.fix__movieShow {
   position: relative;
   left: -13px;
   top: -13px;
@@ -18,7 +18,7 @@
   white-space: normal;
   border-radius: 8px;
 }
-.now__card:hover {
+.fix__card:hover {
   width: 223px;
   background-color: #ffffff;
   height: 430px;
@@ -26,8 +26,7 @@
   box-shadow: 0px 8px 30px rgba(186, 186, 186, 0.25);
   border-radius: 8px;
 }
-.now__titleMovieShow {
-  display: none;
+.fix__titleMovieShow {
   position: relative;
   top: -20px;
   left: 10px;
@@ -40,11 +39,7 @@
   letter-spacing: 0.15px;
   color: #14142b;
 }
-.now__card:hover .now__titleMovieShow {
-  display: block;
-}
-.now__desMovieShow {
-  display: none;
+.fix__desMovieShow {
   position: relative;
   top: -20px;
   left: 18px;
@@ -58,11 +53,7 @@
   color: #a0a3bd;
   text-align: center;
 }
-.now__card:hover .now__desMovieShow {
-  display: block;
-}
-.now__btnMovieShow {
-  display: none;
+.fix__btnMovieShow {
   position: relative;
   top: -20px;
   left: 30px;
@@ -77,16 +68,13 @@
   height: 33px;
   width: 159px;
 }
-.now__btnMovieShow:hover {
+.fix__btnMovieShow:hover {
   background-color: #5f2eea;
   color: #ffffff;
 }
-.now__card:hover .now__btnMovieShow {
-  display: block;
-}
-.now__movieCardImg {
-  width: 220px;
-  height: 280px;
+.fix__movieCardImg {
   padding: 30px;
   border-radius: 6px;
+  width: 220px;
+  height: 280px;
 }
