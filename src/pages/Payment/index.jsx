@@ -5,6 +5,7 @@ import PaymentInfo from "../../components/PaymentInfo";
 import PersonalPayment from "../../components/PersonalPayment";
 import PaymentMethod from "../../components/paymentMethod";
 import { useLocation, useNavigate } from "react-router-dom";
+import axios from "../../utils/axios";
 
 function Payment() {
   const navigate = useNavigate();
@@ -15,15 +16,22 @@ function Payment() {
   const dataUser = JSON.parse(localStorage.getItem("dataUser"));
   const idUser = JSON.parse(localStorage.getItem("idUser"));
   const dataFinalbook = {
-    userId: idUser,
+    userId: 1,
     scheduleId: state.scheduleId,
     dateBooking: state.dateBooking,
     timeBooking: state.timeBooking,
     totalPayment: state.totalPayment,
-    seat: state.seat
+    seat: state.seat,
+    paymentMethod: "midtrans"
   };
-  const handlePayment = () => {
-    console.log(dataFinalbook);
+  const handlePayment = async (event) => {
+    try {
+      const resultPay = await axios.post("booking", dataFinalbook);
+      const midtrans = resultPay.data.data.redirectUrl;
+      alert(`Go to payment : ${midtrans}`);
+    } catch (error) {
+      console.log(error.response);
+    }
   };
 
   return (
