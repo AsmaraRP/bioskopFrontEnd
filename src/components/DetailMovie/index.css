@@ -4,7 +4,7 @@
 }
 .detail__moviePoster {
   position: relative;
-  height: 458px;
+  height: 100%;
   width: 332px;
   left: 0px;
   top: 70px;
@@ -16,8 +16,13 @@
   background-color: #dedede;
 }
 .detail__movieCardImg {
-  padding: 47px;
-  border-radius: 6px;
+  width: 325px;
+  padding: 40px;
+  border-radius: 10%;
+}
+.detail__movieCardImg:hover {
+  padding: 20px;
+  border-radius: 10%;
 }
 .detail__titleMovie {
   position: relative;

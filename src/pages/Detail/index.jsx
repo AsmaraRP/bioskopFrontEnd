@@ -30,7 +30,7 @@ function Detail() {
     try {
       console.log("GET DATA MOVIE");
       const resultMovie = await axios.get(`movie/${params.id}`);
-      setData(resultMovie.data.data);
+      setData(resultMovie.data.data[0]);
     } catch (error) {
       console.log(error.response);
     }
@@ -40,21 +40,18 @@ function Detail() {
       console.log("GET DATA Schedule");
       const resultSchedule = await axios.get(`schedule?page=${page}&limit=${limit}`);
       setDataSchedule(resultSchedule.data.data);
-      console.log(dataSchedule);
     } catch (error) {
       console.log(error.response);
     }
   };
   const [dataOrder, setDataOrder] = useState({
-    name: data.name,
     movieId: params.id,
     dateBooking: new Date().toISOString().split("T")[0]
   });
+  // console.log(dataOrder);
   const changeDataBooking = (data) => {
     setDataOrder({ ...dataOrder, ...data });
-    console.log(dataOrder);
   };
-
   const handleBooking = () => {
     navigate("/order", { state: dataOrder });
   };
@@ -92,9 +89,14 @@ function Detail() {
                     {item.time.split(",").map((time) => (
                       <div className="col-md-auto" key={time}>
                         <button
-                          className="detail__cardTime"
+                          className={`btn ${
+                            time === dataOrder.timeBooking
+                              ? "detail__cardTimeActive"
+                              : "detail__cardTime"
+                          }`}
                           onClick={() =>
                             changeDataBooking({
+                              name: data.name,
                               price: item.price,
                               timeBooking: time,
                               scheduleId: item.id

@@ -8,12 +8,16 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Seat from "../../components/Seat";
 
 function Order() {
+  const navigate = useNavigate();
+  const handleNavigate = (nav) => {
+    navigate(`/${nav}`);
+  };
   const { state } = useLocation();
-  console.log(state);
   const listSeat = ["A", "B", "C", "D", "E", "F", "G"];
   const [selectedSeat, setSelectedSeat] = useState([]);
   const [reservedSeat, setReservedSeat] = useState(["A1", "C2", "B11"]);
   const [totalPayment, setTotalPayment] = useState(0);
+  const [dataPayment, setDataPayment] = useState({ ...state, totalPayment: totalPayment });
   const handleSelectSeat = (seat) => {
     if (selectedSeat.includes(seat)) {
       const deleteSeat = selectedSeat.filter((el) => {
@@ -21,16 +25,23 @@ function Order() {
       });
       setSelectedSeat(deleteSeat);
       setTotalPayment(totalPayment - state.price);
+      setDataPayment({
+        ...dataPayment,
+        totalPayment: totalPayment - state.price,
+        seat: deleteSeat
+      });
     } else {
       setSelectedSeat([...selectedSeat, seat]);
       setTotalPayment(totalPayment + state.price);
+      setDataPayment({
+        ...dataPayment,
+        totalPayment: totalPayment + state.price,
+        seat: [...selectedSeat, seat]
+      });
     }
   };
-
-  console.log(totalPayment);
   const handleBooking = () => {
-    console.log(state);
-    console.log(selectedSeat);
+    navigate("/payment", { state: dataPayment });
   };
   return (
     <>
@@ -41,8 +52,12 @@ function Order() {
             <div className="col-8">
               <h1 className="order__movieSelect">Movie Selected</h1>
               <div className="order__movieOption">
-                <h1 className="order__movieName">Spider-Man : Homecoming</h1>
-                <button className="btn order__btnMovie" type="submit">
+                <h1 className="order__movieName">{state.name}</h1>
+                <button
+                  className="btn order__btnMovie"
+                  type="submit"
+                  onClick={() => handleNavigate("home")}
+                >
                   Change movie
                 </button>
               </div>
@@ -84,10 +99,14 @@ function Order() {
                   </div>
                 </div>
               </div>
-              <button className="btn order__btnChange" type="submit">
+              <button
+                className="btn order__btnChange"
+                type="submit"
+                onClick={() => handleNavigate("home")}
+              >
                 Change your movie
               </button>
-              <button className="btn order__btnCheckout" type="submit">
+              <button className="btn order__btnCheckout" type="submit" onClick={handleBooking}>
                 Checkout now
               </button>
             </div>
@@ -97,18 +116,18 @@ function Order() {
                 <img src={sponsor} alt="" className="order__orderImg" />
                 <p className="order__nameImg">CineOne 21 Cinema</p>
                 <div className="row">
-                  <div className="col-6 mb-3">
+                  <div className="col-4 mb-3">
                     <p className="order__titleOrderLeft">Movie selected</p>
                   </div>
-                  <div className="col-6 mb-3">
+                  <div className="col-8 mb-3">
                     <p className="order__titleOrderRight d-flex justify-content-end">
-                      Spider-Man: Homecoming
+                      {state.name}
                     </p>
                   </div>
                 </div>
                 <div className="row">
                   <div className="col-6 mb-3">
-                    <p className="order__titleOrderLeft">Tuesday, 07 July 2020</p>
+                    <p className="order__titleOrderLeft">{state.dateBooking}</p>
                   </div>
                   <div className="col-6 mb-3">
                     <p className="order__titleOrderRight d-flex justify-content-end">

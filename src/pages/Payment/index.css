@@ -1,7 +1,7 @@
 .payment__main {
   position: relative;
   top: 90px;
-  height: 1200px;
+  height: 1300px;
   background-color: #f5f6f8;
 }
 .payment__paymentInfoTitle {
@@ -23,4 +23,46 @@
   font-size: 24px;
   letter-spacing: 0.25px;
   color: #14142b;
+}
+.payment__btnPrev {
+  position: relative;
+  top: 180px;
+  left: 0;
+  width: 300px;
+  height: 58px;
+  background: #eff0f7;
+  opacity: 0.8;
+  border: 2px solid #5f2eea;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #5f2eea;
+}
+.payment__btnPrev:hover {
+  color: #5f2eea;
+  font-size: 16px;
+}
+.payment__btnPay {
+  position: relative;
+  top: 180px;
+  left: 140px;
+  width: 300px;
+  height: 58px;
+  background: #5f2eea;
+  opacity: 0.8;
+  border: 2px solid #5f2eea;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #eff0f7;
+}
+.payment__btnPay:hover {
+  color: #eff0f7;
+  font-size: 16px;
 }
