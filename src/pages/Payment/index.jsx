@@ -16,7 +16,7 @@ function Payment() {
   const dataUser = JSON.parse(localStorage.getItem("dataUser"));
   const idUser = JSON.parse(localStorage.getItem("idUser"));
   const dataFinalbook = {
-    userId: 1,
+    userId: idUser,
     scheduleId: state.scheduleId,
     dateBooking: state.dateBooking,
     timeBooking: state.timeBooking,

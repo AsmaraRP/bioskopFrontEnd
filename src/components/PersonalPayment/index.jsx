@@ -3,7 +3,7 @@ import line from "../../assets/Line 21.png";
 import warningIcon from "../../assets/warning.png";
 
 function PersonalPayment(probs) {
-  const { firstName, lastName, noTelp } = probs.data;
+  const { firstName, lastName, noTelp, email } = probs.data;
   return (
     <div className="personalPay__infoPersonal">
       <div className="mb-4">
@@ -16,11 +16,7 @@ function PersonalPayment(probs) {
       </div>
       <div className="mb-4">
         <label className="form-label personalPay__labelPersonal">Email</label>
-        <input
-          type="email"
-          className="form-control personalPay__formPersonal"
-          value="rifang.asmara12@gmail.com"
-        />
+        <input type="email" className="form-control personalPay__formPersonal" value={email} />
       </div>
       <div className="mb-4">
         <label className="form-label personalPay__labelPersonal">Phone Number</label>
