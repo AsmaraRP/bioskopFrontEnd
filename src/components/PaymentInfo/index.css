@@ -27,3 +27,21 @@
 .payInfo__linePayment {
   width: 100%;
 }
+@media screen and (max-width: 800px) {
+  .payInfo__titlePayementLeft {
+    display: none;
+  }
+  .payInfo__titlePaymentRight {
+    display: none;
+  }
+  .payInfo__linePayment {
+    display: none;
+  }
+  .payInfo__displayPayOrder {
+    display: inline-block;
+  }
+  .payInfo__totalOrder {
+    display: inline-block;
+    font-weight: 700;
+  }
+}

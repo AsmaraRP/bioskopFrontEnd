@@ -12,9 +12,20 @@ function Payment() {
     navigate(`/${nav}`);
   };
   const { state } = useLocation();
-  const handlePayment = () => {
-    console.log(state);
+  const dataUser = JSON.parse(localStorage.getItem("dataUser"));
+  const idUser = JSON.parse(localStorage.getItem("idUser"));
+  const dataFinalbook = {
+    userId: idUser,
+    scheduleId: state.scheduleId,
+    dateBooking: state.dateBooking,
+    timeBooking: state.timeBooking,
+    totalPayment: state.totalPayment,
+    seat: state.seat
   };
+  const handlePayment = () => {
+    console.log(dataFinalbook);
+  };
+
   return (
     <>
       <Navbar />
@@ -24,8 +35,10 @@ function Payment() {
             <div className="col-md-7">
               <h1 className="payment__paymentInfoTitle"> Payment Info</h1>
               <PaymentInfo data={state} />
-              <h1 className="payment__paymentInfoTitle mt-4"> Choose a Payment Method</h1>
-              <PaymentMethod />
+              <h1 className="payment__paymentInfoTitle choosePay mt-4"> Choose a Payment Method</h1>
+              <div className="payment__paymentMethod">
+                <PaymentMethod />
+              </div>
               <button
                 className="btn payment__btnPrev"
                 type="submit"
@@ -39,7 +52,7 @@ function Payment() {
             </div>
             <div className="col-md-5">
               <h1 className="payment__personalTitle">Personal Info</h1>
-              <PersonalPayment />
+              <PersonalPayment data={dataUser} />
             </div>
           </div>
         </div>

@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Detail from "./pages/Detail";
 import Order from "./pages/Order";
 import Payment from "./pages/Payment";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         {/* <Route path="basic/detail" element={<BasicDetail />} /> */}
         <Route path="basic/detail/:id" element={<BasicDetail />} />
         <Route path="login" element={<SignIn />} />
+        <Route path="signup" element={<Signup />} />
         <Route path="home" element={<Home />} />
         <Route path="detail/:id" element={<Detail />} />
         <Route path="order" element={<Order />} />

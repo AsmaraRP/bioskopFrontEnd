@@ -11,7 +11,7 @@ function Banner() {
             <img src={mottoBanner} alt="" className="banner__motto" />
           </div>
           <div className="col-6">
-            <img src={bannerMain} alt="" className="banner_img" />
+            <img src={bannerMain} alt="" className="banner__img" />
           </div>
         </div>
       </div>

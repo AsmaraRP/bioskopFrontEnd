@@ -69,3 +69,33 @@
   font-size: 14px;
   color: #4e4b66;
 }
+@media screen and (max-width: 800px) {
+  .footer__Logo {
+    top: 30px;
+  }
+  .footer__textCol1 {
+    top: 30px;
+  }
+  .footer__textCol2 {
+    top: 30px;
+  }
+  .footer__Page {
+    top: 30px;
+  }
+  .footer__ourSponsor {
+    position: relative;
+    top: 30px;
+  }
+  .footer__sponsor {
+    top: 30px;
+  }
+  .footer__follow {
+    top: 50px;
+  }
+  .footer__contact {
+    top: 60px;
+  }
+  .footer__copyRight {
+    top: 100px;
+  }
+}

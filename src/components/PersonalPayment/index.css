@@ -61,6 +61,7 @@
   color: #4e4b66;
 }
 .personalPay__warningInput {
+  display: none;
   padding-top: 15px;
   padding-left: 40px;
   height: 64px;
@@ -77,4 +78,9 @@
   font-weight: 400;
   font-size: 16px;
   color: #4e4b66;
+}
+@media screen and (max-width: 800px) {
+  .personalPay__linePhone {
+    display: none;
+  }
 }

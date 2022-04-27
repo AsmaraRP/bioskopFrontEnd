@@ -4,6 +4,7 @@ import "./index.css";
 import logo from "../../assets/logoblue.png";
 import logoSearch from "../../assets/search.png";
 import photoProfile from "../../assets/user.png";
+import navOp from "../../assets/nav.png";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -29,16 +30,18 @@ function Navbar() {
               </button>
             </li>
           </ul>
-
-          <div className="nav___signUpNav nav__displayHide">
+          <div className="nav___signUpNav">
             <button
               className="btn btn-outline-success nav__buttonSignUp"
-              onClick={() => handleNavigate("login")}
+              onClick={() => handleNavigate("signup")}
             >
               Sign Up
             </button>
           </div>
-          <div className="nav__profileNav ">
+          <div className="nav__optionNav">
+            <img src={navOp} alt="" className="nav__optionNavImg" />
+          </div>
+          <div className="nav__profileNav nav__displayHide">
             <div className="row">
               <div className="col-md-auto">
                 <img src={logoSearch} alt="" className="nav__searchNav" />

@@ -97,3 +97,18 @@
   display: none;
   width: 10px;
 }
+.nav__optionNav {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .nav__btnMenu {
+    display: none;
+  }
+  .nav__buttonSignUp {
+    display: none;
+  }
+  .nav__optionNav {
+    display: inline-block;
+    margin-right: 30px;
+  }
+}

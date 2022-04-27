@@ -10,7 +10,7 @@ function DetailMovie(props) {
     <div className="detail__movieDetail">
       <div className="container">
         <div className="row">
-          <div className="col-3">
+          <div className="col-3 detail__cardRes">
             <div className="card detail__moviePoster">
               <img
                 src={
@@ -23,7 +23,7 @@ function DetailMovie(props) {
               />
             </div>
           </div>
-          <div className="col-9">
+          <div className="col-9 detail__desRes">
             <h1 className="detail__titleMovie">{name}</h1>
             <p className="detail__genreMovie">{category}</p>
             <div className="row">
@@ -51,7 +51,4 @@ function DetailMovie(props) {
     </div>
   );
 }
-// DetailMovie.defaultProps = {
-//   image: poster
-// };
 export default DetailMovie;

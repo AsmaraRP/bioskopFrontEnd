@@ -87,7 +87,7 @@ function Detail() {
                   <img src={lineBook} alt="" className="detail__cardLine" />
                   <div className="row">
                     {item.time.split(",").map((time) => (
-                      <div className="col-md-auto" key={time}>
+                      <div className="col-md-3" key={time}>
                         <button
                           className={`btn ${
                             time === dataOrder.timeBooking
@@ -108,12 +108,14 @@ function Detail() {
                       </div>
                     ))}
                   </div>
+                  <br />
+                  <img src={lineBook} alt="" className="detail__cardLine" />
                   <div className="row">
                     <div className="col-6">
                       <p className="detail__price">Price</p>
                     </div>
                     <div className="col-6">
-                      <p className="detail__priceContent">{item.price}</p>
+                      <p className="detail__priceContent">{"Rp. " + item.price + "/seat"}</p>
                     </div>
                   </div>
                   <button

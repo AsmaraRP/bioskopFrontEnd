@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosApiIntances = axios.create({
-  baseURL: "https://project-fw6rifang.herokuapp.com/"
+  baseURL: "http://localhost:3001/"
 });
 
 // Add a request interceptor

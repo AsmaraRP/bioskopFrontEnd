@@ -44,14 +44,14 @@ function Footer() {
               <img src={sponsor1} alt="" className="footer__sponsor" />
             </div>
             <div className="mb-4">
-              <img src={sponsor2} alt="" className="footer__sponsor sp2" />
+              <img src={sponsor2} alt="" className="footer__sponsor" />
             </div>
             <div className="mb-4">
-              <img src={sponsor3} alt="" className="footer__sponsor sp3" />
+              <img src={sponsor3} alt="" className="footer__sponsor" />
             </div>
           </div>
           <div className="col-md-3">
-            <h2 className="footer__textCol2">Follow Us</h2>
+            <h2 className="footer__textCol2 footer__follow">Follow Us</h2>
             <div className="row footer__contact">
               <div className="col-1">
                 <img src={iconfb} alt="" className="fb" />

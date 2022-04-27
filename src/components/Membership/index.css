@@ -80,3 +80,16 @@
   letter-spacing: 0.75px;
   color: #6e7191;
 }
+@media screen and (max-width: 800px) {
+  .cardMainMembership {
+    height: 350px;
+    width: 390px;
+  }
+  .membership__emailForm {
+    left: -10px;
+    width: 250px;
+  }
+  .membership__buttonResponse {
+    left: 200px;
+  }
+}

@@ -3,6 +3,7 @@ import axios from "../../utils/axios";
 import { Link, useNavigate } from "react-router-dom";
 import "./index.css";
 import logo from "../../assets/logowhite.png";
+import logoT from "../../assets/logoblue.png";
 
 function Login() {
   const navigate = useNavigate();
@@ -21,16 +22,14 @@ function Login() {
     try {
       event.preventDefault();
       const resultLogin = await axios.post("auth/login", form);
-      // console.log(resultLogin);
       setIsError(false);
       setMessage(resultLogin.data.msg);
       localStorage.setItem("token", resultLogin.data.data.token);
       localStorage.setItem("refreshToken", resultLogin.data.data.refreshToken);
-      localStorage.setItem("dataUser", JSON.stringify(resultUser[0]));
-      navigate("/basic/home");
-
-      //   UNTUK GET DATA USER
-      //   const dataUser = JSON.parse(localStorage.getItem(dataUser));
+      const resultUser = await axios.get(`user/${resultLogin.data.data.id}`);
+      localStorage.setItem("dataUser", JSON.stringify(resultUser.data.data[0]));
+      localStorage.setItem("idUser", JSON.stringify(resultLogin.data.data.id));
+      navigate("/home");
     } catch (error) {
       console.log(error.response);
       setIsError(true);
@@ -60,7 +59,7 @@ function Login() {
         </div>
         <div className="col-5">
           <div className="login__right">
-            <img src="CSS/img/Vector.png" alt="" className="login__logo" />
+            <img src={logoT} alt="" className="login__logo" />
             <h1 className="login__h1">Sign In</h1>
             <h4 className="login__desc">
               Sign in with your data that you entered during your registration

@@ -2,7 +2,8 @@ import "./index.css";
 import line from "../../assets/Line 21.png";
 import warningIcon from "../../assets/warning.png";
 
-function PersonalPayment() {
+function PersonalPayment(probs) {
+  const { firstName, lastName, noTelp } = probs.data;
   return (
     <div className="personalPay__infoPersonal">
       <div className="mb-4">
@@ -10,7 +11,7 @@ function PersonalPayment() {
         <input
           type="text"
           className="form-control personalPay__formPersonal"
-          placeholder="Jonas El Redrigues"
+          value={firstName + " " + lastName}
         />
       </div>
       <div className="mb-4">
@@ -18,7 +19,7 @@ function PersonalPayment() {
         <input
           type="email"
           className="form-control personalPay__formPersonal"
-          placeholder="Jonasodri123@gmail.com"
+          value="rifang.asmara12@gmail.com"
         />
       </div>
       <div className="mb-4">
@@ -32,7 +33,7 @@ function PersonalPayment() {
               <img src={line} alt="" className="personalPay__linePhone" />
             </div>
             <div className="col-8">
-              <input type="text" className="personalPay__formNumber" placeholder="81445687121" />
+              <input type="text" className="personalPay__formNumber" value={noTelp} />
             </div>
           </div>
         </div>

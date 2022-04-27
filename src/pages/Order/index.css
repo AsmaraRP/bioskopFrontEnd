@@ -209,3 +209,32 @@
   font-size: 24px;
   color: #5f2eea;
 }
+@media screen and (max-width: 800px) {
+  .order__movieSelect {
+    display: none;
+  }
+  .order__movieOption {
+    display: none;
+  }
+  .order__chooseSeat {
+    margin-top: -50px;
+  }
+  .order__seatOption {
+    padding: 10px;
+    width: 390px;
+    padding-top: 50px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .order__btnChange {
+    display: none;
+  }
+  .order__btnCheckout {
+    left: 40px;
+    top: 700px;
+    border-radius: 20px;
+  }
+  .order__infoBook {
+    width: 390px;
+  }
+}

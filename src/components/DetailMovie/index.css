@@ -102,3 +102,61 @@
   text-align: justify;
   line-height: 30px;
 }
+@media screen and (max-width: 800px) {
+  .detail__movieDetail {
+    height: 1200px;
+  }
+  .detail__titleMovie {
+    top: 550px;
+    left: -50px;
+    width: 300px;
+    font-size: 22px;
+  }
+  .detail__genreMovie {
+    top: 550px;
+    left: -50px;
+  }
+  .detail__menuDetail {
+    top: 550px;
+    left: -50px;
+  }
+  .detail__contentDetail {
+    top: 550px;
+    left: -50px;
+    width: 100px;
+  }
+  .detail__lineDetail {
+    top: 550px;
+    left: -50px;
+    width: 300px;
+  }
+  .detail__synopsisTitle {
+    top: 550px;
+    left: -50px;
+  }
+  .detail__synopsisContent {
+    top: 550px;
+    left: -50px;
+    width: 300px;
+  }
+  .detail__cardRes {
+    margin-bottom: -50px;
+  }
+  .detail__desRes {
+    margin-top: -100px;
+  }
+  .detail__moviePoster {
+    height: 10px;
+    width: 30px;
+    left: 50px;
+    top: 50px;
+    border: none;
+    border-radius: 1px;
+    margin-bottom: -50px;
+  }
+  .detail__movieCardImg {
+    left: 100px;
+    width: 250px;
+    padding: 20px;
+  }
+}

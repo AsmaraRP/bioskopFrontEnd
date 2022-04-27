@@ -7,6 +7,14 @@
   position: absolute;
   top: 304px;
 }
-.banner_img {
-  height: 100%;
+@media screen and (max-width: 800px) {
+  .banner__motto {
+    margin-top: -180px;
+    width: 200px;
+  }
+  .banner__img {
+    margin-top: 100px;
+    margin-left: -200px;
+    width: 400px;
+  }
 }

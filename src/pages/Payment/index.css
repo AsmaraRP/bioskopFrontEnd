@@ -66,3 +66,21 @@
   color: #eff0f7;
   font-size: 16px;
 }
+@media screen and (max-width: 800px) {
+  .payment__paymentMethod {
+    display: none;
+  }
+  .choosePay {
+    display: none;
+  }
+  .payment__btnPrev {
+    display: none;
+  }
+  .payment__btnPay {
+    margin-top: 0;
+    position: relative;
+    top: 650px;
+    left: 45px;
+    border-radius: 20px;
+  }
+}

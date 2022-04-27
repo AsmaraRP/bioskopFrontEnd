@@ -5,7 +5,7 @@ import "./index.css";
 function Card(props) {
   const { id, name, category, image } = props.data;
   return (
-    <div className="fix__card">
+    <div className="fix__card mb-3">
       <div className="card-body fix__movieShow">
         <img
           src={
