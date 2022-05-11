@@ -43,10 +43,10 @@ function Payment() {
             <div className="col-md-7">
               <h1 className="payment__paymentInfoTitle"> Payment Info</h1>
               <PaymentInfo data={state} />
-              <h1 className="payment__paymentInfoTitle choosePay mt-4"> Choose a Payment Method</h1>
+              {/* <h1 className="payment__paymentInfoTitle choosePay mt-4"> Choose a Payment Method</h1>
               <div className="payment__paymentMethod">
                 <PaymentMethod />
-              </div>
+              </div> */}
               <button
                 className="btn payment__btnPrev"
                 type="submit"
