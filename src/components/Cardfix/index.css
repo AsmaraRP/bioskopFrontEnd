@@ -19,9 +19,7 @@
   border-radius: 8px;
 }
 .fix__card:hover {
-  width: 223px;
   background-color: #ffffff;
-  height: 430px;
   border: 0.5px solid #dedede;
   box-shadow: 0px 8px 30px rgba(186, 186, 186, 0.25);
   border-radius: 8px;

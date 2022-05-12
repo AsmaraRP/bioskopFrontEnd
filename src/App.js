@@ -11,6 +11,7 @@ import Detail from "./pages/Detail";
 import Order from "./pages/Order";
 import Payment from "./pages/Payment";
 import Signup from "./pages/Signup";
+import Viewall from "./pages/Viewall";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="login" element={<SignIn />} />
         <Route path="signup" element={<Signup />} />
         <Route path="home" element={<Home />} />
+        <Route path="viewall" element={<Viewall />} />
         <Route path="detail/:id" element={<Detail />} />
         <Route path="order" element={<Order />} />
         <Route path="payment" element={<Payment />} />
