@@ -1,0 +1,61 @@
+.manage__dataSchedule {
+  padding-top: 10px;
+  padding-left: 30px;
+  margin-top: 50px;
+  height: 1200px;
+  width: 100%;
+  background-color: #ffffff;
+}
+.manage__contentMovie {
+  margin-top: 100px;
+  height: 800px;
+  background-color: #ffffff;
+}
+.manange__mainMovie {
+  position: relative;
+  top: 90px;
+  height: 2500px;
+  background-color: #f5f6f8;
+}
+.manage__sortSearch {
+  font-family: "Mulish", sans-serif;
+  position: relative;
+  top: -90px;
+  left: -180px;
+  height: 65px;
+  width: 100px;
+  padding: 20px;
+  background: #fcfdfe;
+  border: 1px solid #dedede;
+  border-radius: 16px;
+  color: #a0a3bd;
+  align-items: flex-start;
+}
+.manage__locationSearch {
+  font-family: "Mulish", sans-serif;
+  position: relative;
+  top: -90px;
+  left: -250px;
+  height: 65px;
+  width: 200px;
+  padding: 20px;
+  background: #fcfdfe;
+  border: 1px solid #dedede;
+  border-radius: 16px;
+  color: #a0a3bd;
+  align-items: flex-start;
+}
+.manage__movieSearch {
+  font-family: "Mulish", sans-serif;
+  position: relative;
+  top: -90px;
+  left: -220px;
+  height: 65px;
+  width: 300px;
+  padding: 20px;
+  background: #fcfdfe;
+  border: 1px solid #dedede;
+  border-radius: 16px;
+  color: #a0a3bd;
+  align-items: flex-start;
+}

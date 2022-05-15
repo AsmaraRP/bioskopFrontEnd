@@ -1,0 +1,131 @@
+.cardSchedule__booknow {
+  position: relative;
+  height: 400px;
+  width: 380px;
+  border-radius: 8px;
+}
+.cardSchedule__booknow:hover {
+  border: 2px solid #5f2eea;
+}
+.cardSchedule__booknowImg {
+  position: relative;
+  top: 30px;
+  left: 15px;
+  width: 100%;
+}
+.cardSchedule__cardTitle {
+  position: relative;
+  top: 24px;
+  left: 10px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #000000;
+}
+.cardSchedule__cardDes {
+  width: 80%;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.75px;
+  color: #6e7191;
+}
+.cardSchedule__cardLine {
+  position: relative;
+  top: 20px;
+}
+.cardSchedule__cardTime {
+  position: relative;
+  top: 50px;
+  border: none;
+  background: none;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #4e4b66;
+}
+.cardSchedule__cardTimeActive {
+  position: relative;
+  top: 50px;
+  border: none;
+  background: none;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #5f2eea;
+}
+.cardSchedule__price {
+  position: relative;
+  top: 60px;
+  left: 15px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6b6b6b;
+}
+.cardSchedule__priceContent {
+  position: relative;
+  top: 56px;
+  left: 50px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+}
+.cardSchedule__updateButton {
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  position: relative;
+  top: 70px;
+  left: 15px;
+  border: 1px solid #5f2eea;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #5f2eea;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  height: 33px;
+  width: 159px;
+}
+.cardSchedule__updateButton:hover {
+  background-color: #5f2eea;
+  color: #ffffff;
+}
+.cardSchedule__deleteButton {
+  position: relative;
+  background-color: #ffffff;
+  top: 70px;
+  left: 15px;
+  border: 1px solid #ed2e7e;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #ed2e7e;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  height: 33px;
+  width: 159px;
+}
+.cardSchedule__deleteButton:hover {
+  background-color: #ed2e7e;
+  color: #ffffff;
+}

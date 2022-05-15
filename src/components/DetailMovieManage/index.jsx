@@ -1,5 +1,5 @@
 import "./index.css";
-import poster from "../../assets/siluet.png";
+import poster from "../../assets/poster.png";
 import { useState, useEffect } from "react";
 
 function DetailMovieManage(props) {

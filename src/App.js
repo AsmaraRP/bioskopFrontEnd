@@ -13,6 +13,8 @@ import Payment from "./pages/Payment";
 import Signup from "./pages/Signup";
 import Viewall from "./pages/Viewall";
 import ManageMovie from "./pages/ManageMovie";
+import ManageSchedule from "./pages/ManageSchedule";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Route path="home" element={<Home />} />
         <Route path="viewall" element={<Viewall />} />
         <Route path="managemovie" element={<ManageMovie />} />
+        <Route path="manageschedule" element={<ManageSchedule />} />
+        <Route path="dashboard" element={<Dashboard />} />
         <Route path="detail/:id" element={<Detail />} />
         <Route path="order" element={<Order />} />
         <Route path="payment" element={<Payment />} />

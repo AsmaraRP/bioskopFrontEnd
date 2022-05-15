@@ -17,7 +17,6 @@ function ManageMovie() {
   const limit = 6;
   const [page, setPage] = useState(1);
   const movie = useSelector((state) => state.movie);
-  const [data, setData] = useState([]);
   const [releaseDate, setReleaseDate] = useState("");
   let totalPagination = [];
   for (let i = 1; i <= movie.pageInfo.totalPage; i++) {
@@ -40,7 +39,6 @@ function ManageMovie() {
   });
   const [idMovie, setIdMovie] = useState("");
   const [isUpdate, setIsUpdate] = useState(false);
-  const [image, setImage] = useState(null);
   const handleChangeForm = (event) => {
     event.preventDefault();
     const { name, value } = event.target;
@@ -133,7 +131,9 @@ function ManageMovie() {
               <div className="row viewall__search">
                 <div className="col-6">
                   <select name="sort" className="viewall__sort" onChange={handleChangeForm}>
-                    <option value="">Sort</option>
+                    <option value="defult" disabled hidden>
+                      Sort
+                    </option>
                     <option value="DESC">A-Z</option>
                     <option value="ASC">Z-A</option>
                   </select>
