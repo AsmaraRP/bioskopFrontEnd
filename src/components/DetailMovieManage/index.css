@@ -1,0 +1,175 @@
+.detailmanage__moviemanage {
+  height: 600px;
+  margin-top: 90px;
+}
+.detailmanage__moviePoster {
+  position: relative;
+  margin-left: 30px;
+  padding: 20px;
+  height: 100%;
+  width: 332px;
+  left: 0px;
+  top: 70px;
+  border: 2px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+.detailmanage__moviePoster:hover {
+  background-color: #dedede;
+}
+.detailmanage__movieCardImg {
+  width: 290px;
+  padding: 40px;
+  border-radius: 10%;
+}
+.detailmanage__movieCardImg:hover {
+  padding: 20px;
+  border-radius: 10%;
+}
+.detailmanage__form {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  font-family: "Mulish", sans-serif;
+  position: relative;
+  left: 83px;
+  top: 75px;
+  font-weight: bold;
+}
+.detailmanage__bar {
+  margin-bottom: 30px;
+  height: 64px;
+  width: 380px;
+  left: 0px;
+  padding: 20px;
+  background: #fcfdfe;
+  border: 1px solid #dedede;
+  color: #a0a3bd;
+  align-items: flex-start;
+}
+.detailmanage__barhalf {
+  margin-bottom: 30px;
+  margin-left: 3px;
+  height: 64px;
+  width: 175px;
+  left: 0px;
+  padding: 30px;
+  background: #fcfdfe;
+  border: 1px solid #dedede;
+  color: #a0a3bd;
+  align-items: flex-start;
+}
+.detailmanage__synopsis {
+  margin-top: 100px;
+  margin-left: 20px;
+  font-family: "Mulish", sans-serif;
+  position: relative;
+  font-weight: bold;
+}
+.detailmanage__barfull {
+  margin-bottom: 30px;
+  height: 100px;
+  width: 1200px;
+  left: 0px;
+  padding: 30px;
+  background: #fcfdfe;
+  border: 1px solid #dedede;
+  color: #a0a3bd;
+  align-items: flex-start;
+}
+.detailmanage__buttonPositon {
+  position: relative;
+  left: 800px;
+}
+.detailmanage__buttonRes {
+  background: #f7f7fc;
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #5f2eea;
+  border: 2px solid #5f2eea;
+}
+.detailmanage__buttonRes:hover {
+  background-color: #5f2eea;
+  color: #f7f7fc;
+  border: 2px solid #f7f7fc;
+}
+.detailmanage__buttonPost {
+  background: #f7f7fc;
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #5f2eea;
+  border: 2px solid #5f2eea;
+}
+.detailmanage__buttonPost:hover {
+  background-color: #5f2eea;
+  color: #f7f7fc;
+  border: 2px solid #f7f7fc;
+}
+
+@media screen and (max-width: 800px) {
+  .detailmanage__movieDetail {
+    height: 1200px;
+  }
+  .detailmanage__titleMovie {
+    top: 550px;
+    left: -50px;
+    width: 300px;
+    font-size: 22px;
+  }
+  .detailmanage__genreMovie {
+    top: 550px;
+    left: -50px;
+  }
+  .detailmanage__menuDetail {
+    top: 550px;
+    left: -50px;
+  }
+  .detailmanage__contentDetail {
+    top: 550px;
+    left: -50px;
+    width: 100px;
+  }
+  .detailmanage__lineDetail {
+    top: 550px;
+    left: -50px;
+    width: 300px;
+  }
+  .detailmanage__synopsisTitle {
+    top: 550px;
+    left: -50px;
+  }
+  .detailmanage__synopsisContent {
+    top: 550px;
+    left: -50px;
+    width: 300px;
+  }
+  .detailmanage__cardRes {
+    margin-bottom: -50px;
+  }
+  .detailmanage__desRes {
+    margin-top: -100px;
+  }
+  .detailmanage__moviePoster {
+    height: 10px;
+    width: 30px;
+    left: 50px;
+    top: 50px;
+    border: none;
+    border-radius: 1px;
+    margin-bottom: -50px;
+  }
+  .detailmanage__movieCardImg {
+    left: 100px;
+    width: 250px;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,19 @@
+.manage__dataMovie {
+  padding-top: 30px;
+  padding-left: 100px;
+  margin-top: 50px;
+  height: 1200px;
+  width: 100%;
+  background-color: #ffffff;
+}
+.manage__contentMovie {
+  margin-top: 100px;
+  height: 800px;
+  background-color: #ffffff;
+}
+.manange__mainMovie {
+  position: relative;
+  top: 90px;
+  height: 2500px;
+  background-color: #f5f6f8;
+}

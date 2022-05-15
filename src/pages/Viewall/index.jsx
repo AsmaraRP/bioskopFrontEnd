@@ -1,7 +1,6 @@
 import "./index.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import ReactPaginate from "react-paginate";
 import { useSelector, useDispatch } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -33,6 +32,10 @@ function Viewall() {
   const [page, setPage] = useState(1);
   const movie = useSelector((state) => state.movie);
   const [releaseDate, setReleaseDate] = useState("");
+  let totalPagination = [];
+  for (let i = 1; i <= movie.pageInfo.totalPage; i++) {
+    totalPagination.push(i);
+  }
   const [form, setForm] = useState({
     search: "",
     sort: ""
@@ -58,6 +61,7 @@ function Viewall() {
   const getdataMovie = async () => {
     try {
       await dispatch(getDataMovie(page, limit, form.search, form.sort, releaseDate));
+      console.log(movie.pageInfo);
     } catch (error) {
       console.log(error.response);
     }
@@ -125,16 +129,15 @@ function Viewall() {
         </div>
       </div>
       <div className="view__paginate">
-        <ReactPaginate
-          breakLabel="..."
-          nextLabel="next >"
-          pageCount={movie.pageInfo.totalPage}
-          previousLabel="< previous"
-          onPageChange={handlePagination}
-          containerClassName={"pagination"}
-          subContainerClassName={"pages pagination"}
-          activeClassName={"active"}
-        />
+        {totalPagination.map((item) => (
+          <button
+            className={`btn ${item === page ? "view__buttonActive" : "view__button"}`}
+            key={item.addr}
+            onClick={() => setPage(item)}
+          >
+            {item}
+          </button>
+        ))}
       </div>
 
       <Footer />

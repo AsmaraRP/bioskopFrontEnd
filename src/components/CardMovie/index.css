@@ -1,0 +1,49 @@
+.cardmovie__card {
+  vertical-align: top;
+  height: 458px;
+  width: 223px;
+  margin-right: 40px;
+  display: inline-block;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+}
+.cardmovie__btnUpdate {
+  margin-bottom: 5px;
+  position: relative;
+  top: -20px;
+  left: 30px;
+  border: 1px solid #5f2eea;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #5f2eea;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  height: 33px;
+  width: 159px;
+}
+.cardmovie__btnUpdate:hover {
+  background-color: #5f2eea;
+  color: #ffffff;
+}
+.cardmovie__btnDelete {
+  position: relative;
+  top: -20px;
+  left: 30px;
+  border: 1px solid #ed2e7e;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #ed2e7e;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  height: 33px;
+  width: 159px;
+}
+.cardmovie__btnDelete:hover {
+  background-color: #ed2e7e;
+  color: #ffffff;
+}

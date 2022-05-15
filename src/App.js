@@ -12,6 +12,7 @@ import Order from "./pages/Order";
 import Payment from "./pages/Payment";
 import Signup from "./pages/Signup";
 import Viewall from "./pages/Viewall";
+import ManageMovie from "./pages/ManageMovie";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="signup" element={<Signup />} />
         <Route path="home" element={<Home />} />
         <Route path="viewall" element={<Viewall />} />
+        <Route path="managemovie" element={<ManageMovie />} />
         <Route path="detail/:id" element={<Detail />} />
         <Route path="order" element={<Order />} />
         <Route path="payment" element={<Payment />} />
