@@ -208,7 +208,7 @@ function DetailMovieManage(props) {
             </div>
           </div>
           <div className="row detailmanage__synopsis">
-            <div className="col-auto">
+            <div className="col-auto synopsisForm">
               <label className="form-label">Synopsis</label>
               <input
                 className="detailmanage__barfull d-flex"

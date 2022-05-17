@@ -1,0 +1,14 @@
+@media screen and (max-width: 800px) {
+  .nav__btnMenu {
+    display: none;
+  }
+  .nav__profileNav {
+    display: none;
+  }
+  .nav__buttonSignUp {
+    display: none;
+  }
+  .nav___signUpNavAdmin {
+    display: none;
+  }
+}

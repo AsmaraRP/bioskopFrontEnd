@@ -107,7 +107,7 @@ function DetailScheduleManage(props) {
         <form onSubmit={handleSubmitUpdate}>
           <div className="row">
             <div className="col-3 detailmanage__cardRes">
-              <div className="card detailmanage__moviePoster">
+              <div className="card detailmanage__moviePosterSchedule">
                 <img
                   src={
                     formUpdate.image

@@ -48,3 +48,24 @@
   color: #f7f7fc;
   border: 2px solid #f7f7fc;
 }
+@media screen and (max-width: 800px) {
+  .dashboard__main {
+    height: 1050px;
+  }
+  .dashboard__chart {
+    width: 400px;
+    height: 200px;
+  }
+  .dashboard__img {
+    width: 400px;
+  }
+  .dashboard__menu {
+    display: none;
+  }
+  .dashboard__filter {
+    width: 400px;
+    position: relative;
+    left: -330px;
+    top: 400px;
+  }
+}

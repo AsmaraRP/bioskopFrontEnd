@@ -33,6 +33,17 @@
   font-weight: 700;
   font-size: 14px;
 }
+.nav__btnMenuDropdown {
+  padding-top: 20px;
+  margin-left: 50px;
+  background-color: #ffffff;
+  border: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #5f2eea;
+}
 .nav__buttonSignUp:hover {
   background-color: #ffffff;
   color: #5f2eea;
@@ -102,6 +113,9 @@
 }
 @media screen and (max-width: 800px) {
   .nav__btnMenu {
+    display: none;
+  }
+  .nav__profileNav {
     display: none;
   }
   .nav__buttonSignUp {

@@ -1,0 +1,165 @@
+.history__main {
+  position: relative;
+  top: 90px;
+  height: 1200px;
+  background-color: #f5f6f8;
+}
+.profile__info {
+  position: relative;
+  top: 90px;
+  height: 400px;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 32px rgba(186, 186, 186, 0.08);
+  border-radius: 24px;
+}
+.profile__infotitle {
+  position: relative;
+  top: 30px;
+  text-align: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+.profile__infoname {
+  position: relative;
+  top: 40px;
+  text-align: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  color: #14142b;
+}
+.profile__profileImg {
+  position: relative;
+  top: 30px;
+  left: 25%;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.profile__menu {
+  position: relative;
+  top: 90px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+.profile__btnMenu {
+  padding-top: 20px;
+  margin-left: 50px;
+  background-color: #ffffff;
+  border: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  border-bottom: 2px solid #5f2eea;
+}
+.profile__btnNextMenu {
+  padding-top: 20px;
+  margin-left: 50px;
+  background-color: #ffffff;
+  border: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #aaaaaa;
+}
+.profile__buttonLogout {
+  position: relative;
+  top: 70px;
+  left: 30%;
+  background: #5f2eea;
+  border-radius: 16px;
+  width: 120px;
+  height: 40px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #f7f7fc;
+}
+.profile__buttonLogout:hover {
+  background-color: #ffffff;
+  color: #5f2eea;
+  border: 2px solid #5f2eea;
+}
+.history__card {
+  position: relative;
+  padding: 50px;
+  top: 90px;
+  margin-top: 30px;
+  height: 250px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+.history__movieName {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+}
+.history__movieDate {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+.history__imgCard {
+  position: relative;
+  top: 20px;
+  left: 60%;
+  width: 150px;
+}
+.history__lineCard {
+  width: 100%;
+}
+.history__statusTicket {
+  margin-top: 30px;
+  background-color: #00ba88;
+  padding: 10px;
+  height: 40px;
+  width: 196px;
+  border-radius: 4px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: #f7f7fc;
+}
+.history__seeTicket {
+  padding-top: 20px;
+  position: relative;
+  left: 70%;
+  background-color: #ffffff;
+  border: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #aaaaaa;
+}
+@media screen and (max-width: 800px) {
+  .history__card {
+    padding: 20px;
+    position: relative;
+    top: 600px;
+    left: -100px;
+    width: 400px;
+  }
+  .history__seeTicket {
+    left: 50px;
+  }
+  .history__imgCard {
+    left: 0px;
+  }
+}

@@ -13,11 +13,11 @@ function Dashboard() {
             <div className="col-9">
               <h1 className="viewall__listTitle">Dashboard</h1>
               <div className="dashboard__chart">
-                <img src={chart} />
+                <img src={chart} className="dashboard__img" />
               </div>
             </div>
             <div className="col-3">
-              <h1 className="viewall__listTitle">Filtered</h1>
+              <h1 className="viewall__listTitle dashboard__menu">Filtered</h1>
               <div className="dashboard__filter">
                 <select name="selectMovie" className="dashboard__selectmovie">
                   <option value="ASC">Select Movie</option>

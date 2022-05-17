@@ -2,7 +2,7 @@
   height: 600px;
   margin-top: 90px;
 }
-.detailmanage__moviePoster {
+.detailmanage__moviePosterSchedule {
   position: relative;
   margin-left: 30px;
   padding: 20px;
@@ -138,60 +138,13 @@
 }
 
 @media screen and (max-width: 800px) {
-  .detailmanage__movieDetail {
-    height: 1200px;
-  }
-  .detailmanage__titleMovie {
-    top: 550px;
-    left: -50px;
-    width: 300px;
-    font-size: 22px;
-  }
-  .detailmanage__genreMovie {
-    top: 550px;
-    left: -50px;
-  }
-  .detailmanage__menuDetail {
-    top: 550px;
-    left: -50px;
-  }
-  .detailmanage__contentDetail {
-    top: 550px;
-    left: -50px;
-    width: 100px;
-  }
-  .detailmanage__lineDetail {
-    top: 550px;
-    left: -50px;
-    width: 300px;
-  }
-  .detailmanage__synopsisTitle {
-    top: 550px;
-    left: -50px;
-  }
-  .detailmanage__synopsisContent {
-    top: 550px;
-    left: -50px;
-    width: 300px;
-  }
-  .detailmanage__cardRes {
-    margin-bottom: -50px;
-  }
   .detailmanage__desRes {
-    margin-top: -100px;
+    margin-top: -120px;
   }
-  .detailmanage__moviePoster {
-    height: 10px;
-    width: 30px;
-    left: 50px;
-    top: 50px;
-    border: none;
-    border-radius: 1px;
-    margin-bottom: -50px;
+  .detailmanage__moviePosterSchedule {
+    margin-left: 10px;
   }
-  .detailmanage__movieCardImg {
-    left: 100px;
-    width: 250px;
-    padding: 20px;
+  .detailmanageschedule__bar {
+    width: 300px;
   }
 }

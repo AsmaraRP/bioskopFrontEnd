@@ -47,14 +47,16 @@ function Signup() {
   const handleReset = (event) => {
     event.preventDefault();
   };
-
+  const handleHome = () => {
+    navigate("/home");
+  };
   return (
     <div className="container">
       <div className="row">
         <div className="col-7">
           <div className="signup__left">
             <div className="signup__overlay">
-              <img src={logo} alt="" className="signup__banner_img" />
+              <img src={logo} alt="" className="signup__banner_img" onClick={handleHome} />
               <h2 className="signup__motto">wait, watch, wow!</h2>
             </div>
           </div>

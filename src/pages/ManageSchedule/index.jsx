@@ -158,12 +158,12 @@ function ManageSchedule() {
   return (
     <>
       <NavbarAdmin />
-      <div className="manange__mainMovie">
+      <div className="manage__mainSchedule">
         <div className="container">
-          <div className="manage__formMovie">
+          <div className="manage__formShedule">
             <h1 className="viewall__listTitle">Form Schedule</h1>
           </div>
-          <div className="manage__contentMovie">
+          <div className="manage__contentSchedule">
             <DetailScheduleManage data={formschedule} dataUpdate={dataUpdate} postData={postData} />
           </div>
 
@@ -172,7 +172,7 @@ function ManageSchedule() {
               <h1 className="viewall__listTitle">Data Schedule</h1>
             </div>
             <div className="col-5">
-              <div className="row viewall__search">
+              <div className="row viewall__search manage__scheduleSearchsort">
                 <div className="col-4">
                   <select name="sort" className="manage__sortSearch" onChange={handleChangeForm}>
                     <option value="defaultsort" disabled hidden>

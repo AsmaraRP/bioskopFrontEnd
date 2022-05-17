@@ -116,60 +116,74 @@
 }
 
 @media screen and (max-width: 800px) {
-  .detailmanage__movieDetail {
-    height: 1200px;
-  }
-  .detailmanage__titleMovie {
-    top: 550px;
-    left: -50px;
-    width: 300px;
-    font-size: 22px;
-  }
-  .detailmanage__genreMovie {
-    top: 550px;
-    left: -50px;
-  }
-  .detailmanage__menuDetail {
-    top: 550px;
-    left: -50px;
-  }
-  .detailmanage__contentDetail {
-    top: 550px;
-    left: -50px;
-    width: 100px;
-  }
-  .detailmanage__lineDetail {
-    top: 550px;
-    left: -50px;
-    width: 300px;
-  }
-  .detailmanage__synopsisTitle {
-    top: 550px;
-    left: -50px;
-  }
-  .detailmanage__synopsisContent {
-    top: 550px;
-    left: -50px;
-    width: 300px;
-  }
-  .detailmanage__cardRes {
-    margin-bottom: -50px;
-  }
-  .detailmanage__desRes {
-    margin-top: -100px;
-  }
   .detailmanage__moviePoster {
-    height: 10px;
-    width: 30px;
-    left: 50px;
-    top: 50px;
-    border: none;
-    border-radius: 1px;
-    margin-bottom: -50px;
+    position: relative;
+    margin-left: -25px;
   }
-  .detailmanage__movieCardImg {
-    left: 100px;
-    width: 250px;
-    padding: 20px;
+  .detailmanage__bar {
+    width: 300px;
+  }
+  .nameForm {
+    position: relative;
+    top: 550px;
+    left: -180px;
+  }
+  .directorForm {
+    position: relative;
+    top: 550px;
+    left: -180px;
+  }
+  .releaseForm {
+    position: relative;
+    top: 550px;
+    left: -180px;
+  }
+  .imageForm {
+    position: relative;
+    top: 550px;
+    left: -180px;
+  }
+  .categoryForm {
+    position: relative;
+    top: 1050px;
+    left: -310px;
+  }
+  .castForm {
+    position: relative;
+    top: 1050px;
+    left: -310px;
+  }
+  .detailmanage__barhalf {
+    width: 150px;
+  }
+  .hourForm {
+    position: relative;
+    top: 1050px;
+    left: -310px;
+  }
+  .minuteForm {
+    position: relative;
+    top: 1050px;
+    left: -310px;
+  }
+  .detailmanage__barfull {
+    width: 300px;
+    height: 200px;
+  }
+  .synopsisForm {
+    position: relative;
+    top: 1000px;
+    left: -25px;
+  }
+  .detailmanage__buttonPost {
+    position: relative;
+    top: 1000px;
+    left: -795px;
+    margin-bottom: 20px;
+  }
+  .detailmanage__buttonRes {
+    position: relative;
+    top: 1000px;
+    left: -795px;
   }
 }

@@ -4,9 +4,12 @@ import { Link, useNavigate } from "react-router-dom";
 import "./index.css";
 import logo from "../../assets/logowhite.png";
 import logoT from "../../assets/logoblue.png";
+import { useDispatch } from "react-redux";
+import { getUserById } from "../../stores/actions/user";
 
 function Login() {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [form, setForm] = useState({
     email: "",
     password: ""
@@ -26,9 +29,8 @@ function Login() {
       setMessage(resultLogin.data.msg);
       localStorage.setItem("token", resultLogin.data.data.token);
       localStorage.setItem("refreshToken", resultLogin.data.data.refreshToken);
-      const resultUser = await axios.get(`user/${resultLogin.data.data.id}`);
-      localStorage.setItem("dataUser", JSON.stringify(resultUser.data.data[0]));
-      localStorage.setItem("idUser", JSON.stringify(resultLogin.data.data.id));
+      localStorage.setItem("id", resultLogin.data.data.id);
+      await dispatch(getUserById(resultLogin.data.data.id));
       navigate("/home");
     } catch (error) {
       console.log(error.response);
@@ -46,13 +48,16 @@ function Login() {
     console.log("Reset Form");
   };
 
+  const handleHome = () => {
+    navigate("/home");
+  };
   return (
     <div className="container">
       <div className="row">
         <div className="col-7">
           <div className="login__left">
             <div className="login__overlay">
-              <img src={logo} alt="" className="login__banner_img" />
+              <img src={logo} alt="" className="login__banner_img" onClick={handleHome} />
               <h2 className="login__motto">wait, watch, wow!</h2>
             </div>
           </div>

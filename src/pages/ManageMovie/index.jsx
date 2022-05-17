@@ -114,7 +114,7 @@ function ManageMovie() {
   return (
     <>
       <NavbarAdmin />
-      <div className="manange__mainMovie">
+      <div className="manage__mainMovie">
         <div className="container">
           <div className="manage__formMovie">
             <h1 className="viewall__listTitle">Form Movie</h1>
@@ -124,10 +124,10 @@ function ManageMovie() {
           </div>
 
           <div className="row">
-            <div className="col-7">
+            <div className="col-7 manage__titleRes">
               <h1 className="viewall__listTitle">Data Movie</h1>
             </div>
-            <div className="col-5">
+            <div className="col-5 manage__sortsearch">
               <div className="row viewall__search">
                 <div className="col-6">
                   <select name="sort" className="viewall__sort" onChange={handleChangeForm}>

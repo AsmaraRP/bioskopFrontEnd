@@ -44,7 +44,6 @@ function Viewall() {
     event.preventDefault();
     const { name, value } = event.target;
     setForm({ ...form, [name]: value });
-    console.log(form);
     getdataMovie();
   };
   useEffect(() => {
@@ -61,7 +60,6 @@ function Viewall() {
   const getdataMovie = async () => {
     try {
       await dispatch(getDataMovie(page, limit, form.search, form.sort, releaseDate));
-      console.log(movie.pageInfo);
     } catch (error) {
       console.log(error.response);
     }
@@ -70,7 +68,6 @@ function Viewall() {
     navigate(`/detail/${id}`);
   };
   const handlePagination = (data) => {
-    console.log(data.selected + 1);
     setPage(data.selected + 1);
   };
   return (

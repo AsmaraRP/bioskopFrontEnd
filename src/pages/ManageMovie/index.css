@@ -11,9 +11,36 @@
   height: 800px;
   background-color: #ffffff;
 }
-.manange__mainMovie {
+.manage__mainMovie {
   position: relative;
   top: 90px;
   height: 2500px;
   background-color: #f5f6f8;
+}
+@media screen and (max-width: 800px) {
+  .manage__contentMovie {
+    margin-top: 100px;
+    height: 2000px;
+    background-color: #ffffff;
+  }
+  .manage__mainMovie {
+    position: relative;
+    top: 90px;
+    height: 3700px;
+    background-color: #f5f6f8;
+  }
+  .manage__sortsearch {
+    display: none;
+  }
+  .manage__titleRes {
+    margin-bottom: 30px;
+  }
+  .manage__dataMovie {
+    overflow: auto;
+  }
+  .view__paginate {
+    position: relative;
+    left: 100px;
+    width: 300px;
+  }
 }
