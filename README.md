@@ -1,4 +1,5 @@
-# BIOSKOP FRONT END PROJECT based on REACTJS
+# Ticketing Cinema - E-TickA based on REACTJS
+![logoTick](https://user-images.githubusercontent.com/95269946/175887345-d450ea96-9082-410e-b0d4-f83e90767592.png)
 
 In this project, we make some pages of front end project that not only about styled pages but also integrated pages which connect eact other with backend project
 
