@@ -19,6 +19,7 @@
 }
 .login__left {
   background-image: url("../../assets/avanger.png");
+  /* background-color: #5f2eea; */
   height: 950px;
   width: auto;
   object-fit: cover;
@@ -35,6 +36,14 @@
   left: 83px;
   top: 10px;
   display: none;
+}
+.login__textLogo {
+  color: #f7f7fc;
+  font-size: 100px;
+  margin-left: 200px;
+  position: relative;
+  top: 300px;
+  font-weight: bold;
 }
 .login__desc {
   color: #aaaaaa;

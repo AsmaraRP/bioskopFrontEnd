@@ -8,6 +8,14 @@
 .register__main {
   background-color: #a0a3bd;
 }
+.register__textLogo {
+  color: #f7f7fc;
+  font-size: 100px;
+  margin-left: 200px;
+  position: relative;
+  top: 300px;
+  font-weight: bold;
+}
 .signup__alert {
   font-family: "Inter", sans-serif;
   font-style: normal;

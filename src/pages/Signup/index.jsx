@@ -3,7 +3,7 @@ import axios from "../../utils/axios";
 import { Link, useNavigate } from "react-router-dom";
 import "./index.css";
 import logo from "../../assets/logowhite.png";
-import logoT from "../../assets/logoblue.png";
+import logoT from "../../assets/logoTick.png";
 
 function Signup() {
   const navigate = useNavigate();
@@ -57,7 +57,10 @@ function Signup() {
           <div className="col-7">
             <div className="signup__left">
               <div className="signup__overlay">
-                <img src={logo} alt="" className="signup__banner_img" onClick={handleHome} />
+                {/* <img src={logo} alt="" className="signup__banner_img" onClick={handleHome} /> */}
+                <h1 className="register__textLogo" onClick={handleHome}>
+                  E-TickA
+                </h1>
                 <h2 className="signup__motto">wait, watch, wow!</h2>
               </div>
             </div>

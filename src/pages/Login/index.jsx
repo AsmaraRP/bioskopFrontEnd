@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import axios from "../../utils/axios";
 import { Link, useNavigate } from "react-router-dom";
 import "./index.css";
-import logo from "../../assets/logowhite.png";
-import logoT from "../../assets/logoblue.png";
+import logo from "../../assets/ticketLogo.png";
+import logoT from "../../assets/logoTick.png";
 import { useDispatch } from "react-redux";
 import { getUserById } from "../../stores/actions/user";
 
@@ -58,7 +58,10 @@ function Login() {
           <div className="col-7">
             <div className="login__left">
               <div className="login__overlay">
-                <img src={logo} alt="" className="login__banner_img" onClick={handleHome} />
+                {/* <img src={logo} alt="" className="login__banner_img" onClick={handleHome} /> */}
+                <h1 className="login__textLogo" onClick={handleHome}>
+                  E-TickA
+                </h1>
                 <h2 className="login__motto">wait, watch, wow!</h2>
               </div>
             </div>
