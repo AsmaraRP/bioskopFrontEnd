@@ -32,6 +32,8 @@ function Profile() {
       const sendData = { id: idUser, ...formUser };
       console.log(sendData);
       await dispatch(updateUser(idUser, formUser));
+      await dispatch(getUserById(idUser));
+      alert("SUCCESS UPDATING DATA");
     } catch (error) {
       console.log(error.response);
     }
@@ -43,6 +45,8 @@ function Profile() {
       const sendDataPassword = { id: idUser, ...formPassword };
       console.log(sendDataPassword);
       await dispatch(updatePasswod(idUser, formPassword));
+      setFormPassword({ newPassword: "", confirmPassword: "" });
+      alert("SUCCESS UPDATING DATA");
     } catch (error) {
       console.log(error.response);
     }
@@ -101,6 +105,7 @@ function Profile() {
                     <div className="col-6">
                       <div className="profile__nameForm">
                         <label className="form-label">First Name</label>
+                        <i className="bi bi-person"></i>
                         <input
                           className="profile__detailForm d-flex"
                           type="text"

@@ -76,7 +76,7 @@
 .detailmanage__buttonPositonSchedule {
   position: relative;
   top: 100px;
-  left: 800px;
+  padding-left: 30px;
 }
 .detailmanage__buttonRes {
   background: #f7f7fc;

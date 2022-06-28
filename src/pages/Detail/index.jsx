@@ -13,7 +13,9 @@ function Detail() {
   const params = useParams();
   const [limit, setLimit] = useState(3);
   const [page, setPage] = useState(1);
+  const [location, setLocation] = useState("");
   const [data, setData] = useState([]);
+  const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
   const [dataSchedule, setDataSchedule] = useState([]);
 
   useEffect(() => {
@@ -25,7 +27,9 @@ function Detail() {
   useEffect(() => {
     getdataSchedule();
   }, [limit]);
-
+  useEffect(() => {
+    getdataSchedule();
+  }, [location]);
   const getdataMovieById = async () => {
     try {
       console.log("GET DATA MOVIE");
@@ -38,7 +42,9 @@ function Detail() {
   const getdataSchedule = async () => {
     try {
       console.log("GET DATA Schedule");
-      const resultSchedule = await axios.get(`schedule?page=${page}&limit=${limit}`);
+      const resultSchedule = await axios.get(
+        `schedule?page=${page}&limit=${limit}&searchLocation=${location}`
+      );
       setDataSchedule(resultSchedule.data.data);
     } catch (error) {
       console.log(error.response);
@@ -46,13 +52,14 @@ function Detail() {
   };
   const [dataOrder, setDataOrder] = useState({
     movieId: params.id,
-    dateBooking: new Date().toISOString().split("T")[0]
+    dateBooking: date
   });
   // console.log(dataOrder);
   const changeDataBooking = (data) => {
     setDataOrder({ ...dataOrder, ...data });
   };
   const handleBooking = () => {
+    console.log(dataOrder);
     navigate("/order", { state: dataOrder });
   };
   const handleView = () => {
@@ -65,10 +72,20 @@ function Detail() {
       <div className="detail__showtimes">
         <div className="container">
           <h1 className="detail__showtimesTitle">Showtimes and Tickets</h1>
-          <input type="date" value={dataOrder.dateBooking} className="detail__calender" />
-          <select name="location" className="detail__location">
+          <input
+            type="date"
+            className="detail__calender"
+            onChange={(event) => setDate(event.target.value)}
+          />
+          <select
+            name="location"
+            className="detail__location"
+            onClick={(event) => setLocation(event.target.value)}
+          >
             <option value="">Select Location</option>
-            <option value="jakarta">Jakarta</option>
+            <option value="Jember">Jember</option>
+            <option value="Banyuwangi">Banyuwangi</option>
+            <option value="Surabaya">Surabaya</option>
           </select>
           <br />
           <div className="row mt-4">
@@ -81,7 +98,9 @@ function Detail() {
                     </div>
                     <div className="col-7">
                       <p className="detail__cardTitle">ebv.id</p>
-                      <p className="detail__cardDes">Whatever street No.12, South Purwokerto</p>
+                      <p className="detail__cardDes">
+                        {"Whatever street No.12, " + item.location}{" "}
+                      </p>
                     </div>
                   </div>
                   <img src={lineBook} alt="" className="detail__cardLine" />
@@ -90,7 +109,7 @@ function Detail() {
                       <div className="col-md-3" key={time}>
                         <button
                           className={`btn ${
-                            time === dataOrder.timeBooking
+                            time === dataOrder.timeBooking && item.id === dataOrder.scheduleId
                               ? "detail__cardTimeActive"
                               : "detail__cardTime"
                           }`}
@@ -99,7 +118,8 @@ function Detail() {
                               name: data.name,
                               price: item.price,
                               timeBooking: time,
-                              scheduleId: item.id
+                              scheduleId: item.id,
+                              dateBooking: date
                             })
                           }
                         >

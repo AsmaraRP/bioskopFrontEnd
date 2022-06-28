@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
-import logo from "../../assets/logoblue.png";
+import logo from "../../assets/logoTick.png";
 import sponsor1 from "../../assets/sponsor1.png";
 import sponsor2 from "../../assets/sponsor2.png";
 import sponsor3 from "../../assets/sponsor3.png";

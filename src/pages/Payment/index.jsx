@@ -14,7 +14,7 @@ function Payment() {
   };
   const { state } = useLocation();
   const dataUser = JSON.parse(localStorage.getItem("dataUser"));
-  const idUser = JSON.parse(localStorage.getItem("idUser"));
+  const idUser = localStorage.getItem("id");
   const dataFinalbook = {
     userId: idUser,
     scheduleId: state.scheduleId,
@@ -26,9 +26,10 @@ function Payment() {
   };
   const handlePayment = async (event) => {
     try {
+      console.log(dataFinalbook);
       const resultPay = await axios.post("booking", dataFinalbook);
       const midtrans = resultPay.data.data.redirectUrl;
-      alert(`Go to payment : ${midtrans}`);
+      window.open(midtrans);
     } catch (error) {
       console.log(error.response);
     }

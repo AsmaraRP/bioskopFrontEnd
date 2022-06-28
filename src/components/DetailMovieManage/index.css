@@ -4,12 +4,11 @@
 }
 .detailmanage__moviePoster {
   position: relative;
-  margin-left: 30px;
   padding: 20px;
   height: 100%;
   width: 332px;
-  left: 0px;
-  top: 70px;
+  left: 40px;
+  top: 40px;
   border: 2px solid #dedede;
   box-sizing: border-box;
   border-radius: 16px;
@@ -77,8 +76,7 @@
   align-items: flex-start;
 }
 .detailmanage__buttonPositon {
-  position: relative;
-  left: 800px;
+  padding-left: 30px;
 }
 .detailmanage__buttonRes {
   background: #f7f7fc;

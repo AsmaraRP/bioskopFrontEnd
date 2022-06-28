@@ -20,16 +20,64 @@
   color: #14142b;
   text-align: center;
 }
-.ticket__exam {
-  position: relative;
-  left: 15%;
-  top: 50px;
+.ticket__card {
+  display: flex;
 }
-.ticket__barcode {
-  position: relative;
-  z-index: 1;
-  left: -40px;
-  top: 70px;
+.ticket__left {
+  flex: 2;
+  background-color: #5f2eea;
+  border: 2px solid #5f2eea;
+  border-top-left-radius: 30px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+.ticket__headLeft {
+  height: 50px;
+}
+.ticket__right {
+  flex: 1;
+  background-color: #5f2eea;
+  border: 2px solid #5f2eea;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+.ticket__headRight {
+  height: 60px;
+}
+.ticket__logo {
+  height: 30px;
+}
+.ticket__info {
+  display: flex;
+}
+.ticket__form {
+  border: 2px solid #5f2eea;
+  padding-left: 30px;
+  padding-top: 30px;
+  flex: 2;
+  height: 300px;
+}
+.ticket__code {
+  border: 2px solid #5f2eea;
+  flex: 1;
+  padding-top: 50px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-bottom-right-radius: 30px;
+}
+.ticket__text1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  color: #aaaaaa;
+}
+.ticket__text2 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  color: #14142b;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 800px) {
   .ticket__main {
@@ -37,16 +85,5 @@
   }
   .ticket__content {
     height: 1200px;
-  }
-  .ticket__exam {
-    position: relative;
-    top: 300px;
-    left: -260px;
-    transform: rotate(90deg);
-  }
-  .ticket__barcode {
-    transform: rotate(90deg);
-    top: 320px;
-    left: 30px;
   }
 }

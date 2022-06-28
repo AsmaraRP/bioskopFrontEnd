@@ -43,7 +43,7 @@ function Home() {
   const getdataMovie = async () => {
     try {
       console.log("GET DATA MOVIE");
-      const resultMovie = await axios.get(`movie?page=${page}&limit=${limit}`);
+      const resultMovie = await axios.get("movie?page=1&limit=5");
       setData(resultMovie.data.data);
       setPageInfo(resultMovie.data.pagination);
     } catch (error) {

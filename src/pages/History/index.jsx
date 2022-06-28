@@ -4,10 +4,29 @@ import Footer from "../../components/Footer";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import line from "../../assets/Line 36.png";
-import sponsor from "../../assets/sponsor2.png";
+import sponsor1 from "../../assets/sponsor1.png";
+import sponsor2 from "../../assets/sponsor2.png";
+import sponsor3 from "../../assets/sponsor3.png";
 import photoProfile from "../../assets/siluetprofil.png";
+import { useEffect, useState } from "react";
+import axios from "../../utils/axios";
 
 function History() {
+  useEffect(() => {
+    getdataTicket();
+  }, []);
+  const [dataTicket, setDataTicket] = useState([]);
+  const getdataTicket = async () => {
+    try {
+      console.log("GET DATA TICKET");
+      const idUser = localStorage.getItem("id");
+      const ticket = await axios.get(`booking/user/${idUser}`);
+      setDataTicket(ticket.data.data.slice(0, 3));
+      console.log(dataTicket);
+    } catch (error) {
+      console.log(error.response);
+    }
+  };
   const navigate = useNavigate();
   const handleNavigate = (nav) => {
     navigate(`/${nav}`);
@@ -18,6 +37,9 @@ function History() {
     localStorage.removeItem("refreshToken");
     localStorage.removeItem("id");
     navigate("/history");
+  };
+  const handleTicket = (send) => {
+    navigate("/ticket", { state: send });
   };
   return (
     <>
@@ -57,28 +79,63 @@ function History() {
                   Order History
                 </button>
               </div>
-              <div className="history__card">
-                <div className="row">
-                  <div className="col-6">
-                    <h2 className="history__movieDate">Tuesday, 07 July 2020 - 04:30pm</h2>
-                    <h1 className="history__movieName">Captain Marvel</h1>
+              {dataTicket.map((item) => (
+                <div className="history__card" key={item.id}>
+                  <div className="row">
+                    <div className="col-6">
+                      <h2 className="history__movieDate">
+                        {item.dateBooking.split("T")[0] + " - " + item.timeBooking.substring(0, 5)}
+                      </h2>
+                      <h1 className="history__movieName">{item.name}</h1>
+                    </div>
+                    <div className="col-6">
+                      <img
+                        src={
+                          item.premiere === "ebv.id"
+                            ? sponsor1
+                            : item.premiere === "cineone21"
+                            ? sponsor2
+                            : sponsor3
+                        }
+                        className="history__imgCard"
+                      />
+                    </div>
                   </div>
-                  <div className="col-6">
-                    <img src={sponsor} className="history__imgCard" />
+                  <img src={line} className="history__lineCard" />
+                  <div className="row">
+                    <div className="col-6">
+                      <div
+                        className={
+                          item.statusUsed === "active"
+                            ? "history__statusTicket"
+                            : "history__statusTicketExp"
+                        }
+                      >
+                        {item.statusUsed === "active" ? "Ticket in Active" : "Ticket is Expired"}
+                      </div>
+                    </div>
+                    <div className="col-6">
+                      <button
+                        className="history__seeTicket"
+                        onClick={() =>
+                          handleTicket({
+                            name: item.name,
+                            category: item.category,
+                            date: item.dateBooking.split("T")[0],
+                            time: item.timeBooking.substring(0, 5),
+                            seat: item.seat,
+                            total: item.totalPayment,
+                            id: item.bookingId
+                          })
+                        }
+                        disabled={item.statusUsed === "active" ? false : true}
+                      >
+                        See Details
+                      </button>
+                    </div>
                   </div>
                 </div>
-                <img src={line} className="history__lineCard" />
-                <div className="row">
-                  <div className="col-6">
-                    <div className="history__statusTicket">Ticket in Active</div>
-                  </div>
-                  <div className="col-6">
-                    <button className="history__seeTicket" onClick={() => handleNavigate("ticket")}>
-                      See Details
-                    </button>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

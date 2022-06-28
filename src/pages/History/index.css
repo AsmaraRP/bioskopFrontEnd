@@ -136,6 +136,20 @@
   text-align: center;
   color: #f7f7fc;
 }
+.history__statusTicketExp {
+  margin-top: 30px;
+  background-color: #aaaaaa;
+  padding: 10px;
+  height: 40px;
+  width: 196px;
+  border-radius: 4px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: #f7f7fc;
+}
 .history__seeTicket {
   padding-top: 20px;
   position: relative;

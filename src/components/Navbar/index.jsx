@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import "./index.css";
-import logo from "../../assets/logoblue.png";
+import logo from "../../assets/logoTick.png";
 import logoSearch from "../../assets/search.png";
 import photoProfile from "../../assets/siluetprofil.png";
 import navOp from "../../assets/nav.png";
@@ -74,9 +74,6 @@ function Navbar() {
                 <div className="col-md-auto">
                   <img src={logoSearch} alt="" className="nav__searchNav" />
                 </div>
-                <div className="col-md-auto">
-                  <input type="text" className="nav__searchWord" placeholder="Search movie name" />
-                </div>
                 {dropdown ? (
                   <div className="col-md-auto">
                     <button
@@ -89,7 +86,15 @@ function Navbar() {
                       Logout
                     </button>
                   </div>
-                ) : null}
+                ) : (
+                  <div className="col-md-auto">
+                    <input
+                      type="text"
+                      className="nav__searchWord"
+                      placeholder="Search movie name"
+                    />
+                  </div>
+                )}
                 <div className="col-md-auto">
                   <div className="nav__profileMenu">
                     <button className="btn" onClick={handleDropdown}>

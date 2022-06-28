@@ -1,4 +1,9 @@
 @media screen and (max-width: 800px) {
+  .nav__navcss {
+    background-color: #ffffff;
+    height: 104px;
+    /* box-shadow: 0px 8px 24px rgba(186, 186, 186, 0.16); */
+  }
   .nav__btnMenu {
     display: none;
   }

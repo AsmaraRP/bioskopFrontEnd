@@ -52,74 +52,76 @@ function Login() {
     navigate("/home");
   };
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-7">
-          <div className="login__left">
-            <div className="login__overlay">
-              <img src={logo} alt="" className="login__banner_img" onClick={handleHome} />
-              <h2 className="login__motto">wait, watch, wow!</h2>
+    <div className="login__main">
+      <div className="container login__master">
+        <div className="row">
+          <div className="col-7">
+            <div className="login__left">
+              <div className="login__overlay">
+                <img src={logo} alt="" className="login__banner_img" onClick={handleHome} />
+                <h2 className="login__motto">wait, watch, wow!</h2>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="col-5">
-          <div className="login__right">
-            <img src={logoT} alt="" className="login__logo" />
-            <h1 className="login__h1">Sign In</h1>
-            <h4 className="login__desc">
-              Sign in with your data that you entered during your registration
-            </h4>
-            <div className="text-center">
-              {!message ? null : isError ? (
-                <div className="alert alert-danger login__alert" role="alert">
-                  {message}
+          <div className="col-5">
+            <div className="login__right">
+              <img src={logoT} alt="" className="login__logo" />
+              <h1 className="login__h1">Sign In</h1>
+              <h4 className="login__desc">
+                Sign in with your data that you entered during your registration
+              </h4>
+              <div className="text-center">
+                {!message ? null : isError ? (
+                  <div className="alert alert-danger login__alert" role="alert">
+                    {message}
+                  </div>
+                ) : (
+                  <div className="alert alert-primary login__alert" role="alert">
+                    {message}
+                  </div>
+                )}
+              </div>
+              <form onSubmit={handleSubmit} onReset={handleReset}>
+                <div className="mb-3 login__name">
+                  <label className="form-label">Email</label>
+                  <input
+                    className="login__bar d-flex"
+                    type="email"
+                    value={form.email}
+                    placeholder="Write your email"
+                    name="email"
+                    onChange={handleChangeForm}
+                  />
                 </div>
-              ) : (
-                <div className="alert alert-primary login__alert" role="alert">
-                  {message}
+                <br />
+                <div className="mb-3 login__name">
+                  <label className="form-label">Password</label>
+                  <input
+                    className="login__bar d-flex"
+                    type="password"
+                    value={form.password}
+                    placeholder="Write your password"
+                    name="password"
+                    onChange={handleChangeForm}
+                  />
                 </div>
-              )}
+                <button className="btns login__Btn" type="submit">
+                  Sign In
+                </button>
+                <p className="login__p">
+                  Forgot your password?
+                  <Link to="/login" className="login__switch">
+                    Reset now
+                  </Link>
+                </p>
+                <p className="login__p">
+                  Do not have an account?
+                  <Link to="/signup" className="login__switch">
+                    Sign Up
+                  </Link>
+                </p>
+              </form>
             </div>
-            <form onSubmit={handleSubmit} onReset={handleReset}>
-              <div className="mb-3 login__name">
-                <label className="form-label">Email</label>
-                <input
-                  className="login__bar d-flex"
-                  type="email"
-                  value={form.email}
-                  placeholder="Write your email"
-                  name="email"
-                  onChange={handleChangeForm}
-                />
-              </div>
-              <br />
-              <div className="mb-3 login__name">
-                <label className="form-label">Password</label>
-                <input
-                  className="login__bar d-flex"
-                  type="password"
-                  value={form.password}
-                  placeholder="Write your password"
-                  name="password"
-                  onChange={handleChangeForm}
-                />
-              </div>
-              <button className="btns login__Btn" type="submit">
-                Sign In
-              </button>
-              <p className="login__p">
-                Forgot your password?
-                <Link to="/login" className="login__switch">
-                  Reset now
-                </Link>
-              </p>
-              <p className="login__p">
-                Do not have an account?
-                <Link to="/login" className="login__switch">
-                  Sign Up
-                </Link>
-              </p>
-            </form>
           </div>
         </div>
       </div>

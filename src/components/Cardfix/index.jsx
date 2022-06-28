@@ -16,7 +16,9 @@ function Card(props) {
           className="fix__movieCardImg"
           alt="..."
         />
-        <h5 className="fix__titleMovieShow">{name}</h5>
+        <h5 className="fix__titleMovieShow">
+          {name.length >= 10 ? name.substring(0, 10) + "..." : name}
+        </h5>
         <p className="fix__desMovieShow">{category}</p>
         <button className="btn fix__btnMovieShow" onClick={() => props.handleDetail(id)}>
           Detail

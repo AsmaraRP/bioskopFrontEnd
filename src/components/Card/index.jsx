@@ -16,7 +16,9 @@ function Card(props) {
           className="now__movieCardImg"
           alt="..."
         />
-        <h5 className="now__titleMovieShow">{name}</h5>
+        <h5 className="now__titleMovieShow">
+          {name.length >= 10 ? name.substring(0, 10) + "..." : name}
+        </h5>
         <p className="now__desMovieShow">{category}</p>
         <button className="btn now__btnMovieShow" onClick={() => props.handleDetail(id)}>
           Detail

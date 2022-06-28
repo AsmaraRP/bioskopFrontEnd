@@ -109,9 +109,10 @@
 }
 .view__paginate {
   position: relative;
-  left: 800px;
   top: -100px;
-  z-index: 1;
+  width: 100%;
+  padding-left: 800px;
+  justify-content: center;
   font-family: "Mulish";
   font-style: normal;
 }
@@ -145,5 +146,8 @@
   }
   .view__paginate {
     width: 300px;
+  }
+  .view__paginate {
+    display: none;
   }
 }

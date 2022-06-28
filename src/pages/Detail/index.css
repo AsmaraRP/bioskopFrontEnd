@@ -220,4 +220,7 @@
     left: 170px;
     padding-bottom: 30px;
   }
+  .detail__booknow {
+    height: 500px;
+  }
 }

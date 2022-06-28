@@ -9,6 +9,7 @@
   top: 90px;
   height: 500px;
   background-color: #ffffff;
+  padding: 20px;
 }
 .dashboard__filter {
   position: relative;

@@ -19,6 +19,7 @@ function Order() {
   const [totalPayment, setTotalPayment] = useState(0);
   const [dataPayment, setDataPayment] = useState({ ...state, totalPayment: totalPayment });
   const handleSelectSeat = (seat) => {
+    console.log(state);
     if (selectedSeat.includes(seat)) {
       const deleteSeat = selectedSeat.filter((el) => {
         return el !== seat;

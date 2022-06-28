@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
-import logo from "../../assets/logoblue.png";
+import logo from "../../assets/logoTick.png";
 import navOp from "../../assets/nav.png";
 
 function NavbarAdmin() {
@@ -18,7 +18,7 @@ function NavbarAdmin() {
         <div className="container">
           <ul className="nav">
             <li className="nav-item">
-              <img src={logo} alt="" className="nav__logo" onClik={handleHome} />
+              <img src={logo} alt="" className="nav__logo" onClick={handleHome} />
             </li>
             <li className="nav-item">
               <button className="nav__btnMenu" onClick={() => handleNavigate("dashboard")}>
