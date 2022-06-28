@@ -18,7 +18,7 @@
   },
   "plugins": ["react", "react-hooks", "prettier"],
   "rules": {
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": ["unix", "windows"],
     "quotes": ["error", "double", { "avoidEscape": true }],
     "semi": ["error", "always"],
     "max-len": [
