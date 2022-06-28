@@ -86,4 +86,17 @@
   .ticket__content {
     height: 1200px;
   }
+  .ticket__right {
+    display: none;
+  }
+  .ticket__info {
+    display: block;
+  }
+  .ticket__form {
+    position: relative;
+    /* width: 300px; */
+  }
+  .ticket__code {
+    height: 350px;
+  }
 }
