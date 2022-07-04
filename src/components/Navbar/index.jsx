@@ -12,10 +12,15 @@ function Navbar() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [dropdown, setDropdown] = useState(false);
+  const [nav, setNav] = useState(false);
   const token = localStorage.getItem("token");
   const user = useSelector((state) => state.user);
   const handleNavigate = (nav) => {
     navigate(`/${nav}`);
+  };
+  const handleNav = () => {
+    setNav(!nav);
+    console.log(nav);
   };
   const handleDropdown = () => {
     setDropdown(!dropdown);
@@ -32,6 +37,16 @@ function Navbar() {
 
   return (
     <>
+      {nav ? (
+        <div className="nav__dropMenu">
+          <p onClick={() => handleNavigate("home")}>Home</p>
+          <p onClick={() => handleNavigate("viewall")}>List Movie</p>
+          <p onClick={() => handleNavigate("profile")}>profile</p>
+          <p className="nav__dropLogout" onClick={handleLogout}>
+            logout
+          </p>
+        </div>
+      ) : null}
       <nav className="navbar nav__navcss fixed-top">
         <div className="container">
           <ul className="nav">
@@ -57,7 +72,7 @@ function Navbar() {
             ) : null}
           </ul>
           <div className="nav__optionNav">
-            <img src={navOp} alt="" className="nav__optionNavImg" />
+            <img src={navOp} alt="" className="nav__optionNavImg" onClick={handleNav} />
           </div>
           {!token ? (
             <div className="nav___signUpNav">

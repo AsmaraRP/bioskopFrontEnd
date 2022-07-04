@@ -4,6 +4,28 @@
   height: 104px;
   /* box-shadow: 0px 8px 24px rgba(186, 186, 186, 0.16); */
 }
+.nav__dropMenu {
+  background-color: #ffffff;
+  height: 200px;
+  z-index: 1;
+  position: absolute;
+  width: 300px;
+  left: 25%;
+  top: 110px;
+  text-align: center;
+  color: #5f2eea;
+  border: 2px solid #5f2eea;
+  border-radius: 20px;
+  font-size: 14px;
+  padding-top: 20px;
+}
+.nav__dropLogout {
+  margin-top: 50px;
+  font-weight: bold;
+}
+.nav__dropMenu {
+  display: none;
+}
 .nav {
   padding-top: 20px;
 }
@@ -113,6 +135,9 @@
 @media screen and (max-width: 800px) {
   .nav__logo {
     height: 30%;
+  }
+  .nav__dropMenu {
+    display: block;
   }
   .nav__btnMenu {
     display: none;
