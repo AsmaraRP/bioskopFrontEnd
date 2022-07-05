@@ -48,4 +48,5 @@ Automaticly open browser with localhost
 
 
 ## All of project are build on React Js [https://reactjs.org/]
+Link deploy : https://eticka-rifang.netlify.app/
 
